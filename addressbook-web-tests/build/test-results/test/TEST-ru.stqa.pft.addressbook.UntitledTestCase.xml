@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.UntitledTestCase" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-13T14:51:10" hostname="alitsman" time="2.219">
+<testsuite name="ru.stqa.pft.addressbook.UntitledTestCase" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-13T15:26:33" hostname="alitsman" time="2.164">
   <properties/>
-  <testcase name="testUntitledTestCase" classname="ru.stqa.pft.addressbook.UntitledTestCase" time="2.219"/>
+  <testcase name="testUntitledTestCase" classname="ru.stqa.pft.addressbook.UntitledTestCase" time="2.164"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1568386267251	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\alitsman\\AppData\\Local\\Temp\\rust_mozprofile1aEbA6"
-1568386267694	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1568386267695	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1568386267695	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-1568386269082	Marionette	INFO	Listening on port 1836
-1568386269365	Marionette	WARN	TLS certificate errors will be ignored for this session
-Sep 13, 2019 5:51:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <system-err><![CDATA[1568388390908	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\alitsman\\AppData\\Local\\Temp\\rust_mozprofilejCtLmP"
+1568388391343	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568388391343	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568388391343	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568388392694	Marionette	INFO	Listening on port 12176
+1568388393019	Marionette	WARN	TLS certificate errors will be ignored for this session
+Sep 13, 2019 6:26:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
+1568388396060	Marionette	INFO	Stopped listening on port 12176
+[Parent 31480, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 33252, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 33252, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[GPU 13568, Chrome_C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
 ]]></system-err>
 </testsuite>
