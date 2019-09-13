@@ -19,7 +19,7 @@ public class GroupCreationTests {
 
   private void login(String username, String password) {
 
-    wd.get("http://localhost:8080/"); // Login
+    wd.get("http://localhost:8080/");
     wd.findElement(By.name("user")).click();
     wd.findElement(By.name("user")).clear();
     wd.findElement(By.name("user")).sendKeys(username);
