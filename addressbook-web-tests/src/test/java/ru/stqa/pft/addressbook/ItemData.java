@@ -13,8 +13,8 @@ public class ItemData {
     this.firstname = firstname;
     this.middlename = middlename;
     this.lastname = lastname;
-    this.home = lastname;
-    this.mobile = lastname;
+    this.home = home;
+    this.mobile = mobile;
   }
 
   public String getFirstname() {

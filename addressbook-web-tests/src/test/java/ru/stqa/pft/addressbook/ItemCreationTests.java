@@ -34,7 +34,7 @@ public class ItemCreationTests {
   public void testGroupCreation() throws Exception {
 
     gotoAddPage("add new");
-    ItemData itemData = new ItemData("firstname", "middlename", "lastname", "home", "mobile");
+    ItemData itemData = new ItemData("FN", "MN", "LN", "+79502233650", "+79502233652");
     fillGroupForm(itemData);
     submitItemCreation();
     returnToMainPage();
@@ -47,21 +47,21 @@ public class ItemCreationTests {
 
   private void fillGroupForm(ItemData itemData) {
 
-    wd.findElement(By.name(itemData.getFirstname())).click();
-    wd.findElement(By.name(itemData.getFirstname())).clear();
-    wd.findElement(By.name(itemData.getFirstname())).sendKeys("FN");
-    wd.findElement(By.name(itemData.getMiddlename())).click();
-    wd.findElement(By.name(itemData.getMiddlename())).clear();
-    wd.findElement(By.name(itemData.getMiddlename())).sendKeys("MN");
-    wd.findElement(By.name(itemData.getLastname())).click();
-    wd.findElement(By.name(itemData.getLastname())).clear();
-    wd.findElement(By.name(itemData.getLastname())).sendKeys("LN");
-    wd.findElement(By.name(itemData.getHome())).click();
-    wd.findElement(By.name(itemData.getHome())).clear();
-    wd.findElement(By.name(itemData.getHome())).sendKeys("+79502233650");
-    wd.findElement(By.name(itemData.getMobile())).click();
-    wd.findElement(By.name(itemData.getMobile())).clear();
-    wd.findElement(By.name(itemData.getMobile())).sendKeys("+79502233652");
+    wd.findElement(By.name("firstname")).click();
+    wd.findElement(By.name("firstname")).clear();
+    wd.findElement(By.name("firstname")).sendKeys(itemData.getFirstname());
+    wd.findElement(By.name("middlename")).click();
+    wd.findElement(By.name("middlename")).clear();
+    wd.findElement(By.name("middlename")).sendKeys(itemData.getMiddlename());
+    wd.findElement(By.name("lastname")).click();
+    wd.findElement(By.name("lastname")).clear();
+    wd.findElement(By.name("lastname")).sendKeys(itemData.getLastname());
+    wd.findElement(By.name("home")).click();
+    wd.findElement(By.name("home")).clear();
+    wd.findElement(By.name("home")).sendKeys(itemData.getHome());
+    wd.findElement(By.name("mobile")).click();
+    wd.findElement(By.name("mobile")).clear();
+    wd.findElement(By.name("mobile")).sendKeys(itemData.getMobile());
   }
 
   private void returnToMainPage() {
