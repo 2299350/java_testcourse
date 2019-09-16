@@ -1,12 +1,11 @@
 package ru.stqa.pft.addressbook;
 
 import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class ItemCreationTests {
+public class ItemCreationTests extends TestBase {
 
   private WebDriver wd;
 
@@ -38,6 +37,7 @@ public class ItemCreationTests {
     fillGroupForm(itemData);
     submitItemCreation();
     returnToMainPage();
+    wd.findElement(By.linkText("Logout")).click();
   }
 
   private void gotoAddPage(String page) {
