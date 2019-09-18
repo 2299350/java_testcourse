@@ -22,18 +22,22 @@ public class ItemData {
   }
 
   public String getMiddlename() {
+
     return middlename;
   }
 
   public String getLastname() {
+
     return lastname;
   }
 
   public String getHome() {
+
     return home;
   }
 
   public String getMobile() {
+
     return mobile;
   }
 }

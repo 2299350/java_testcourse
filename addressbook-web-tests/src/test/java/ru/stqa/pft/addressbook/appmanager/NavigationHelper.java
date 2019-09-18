@@ -10,8 +10,8 @@ public class NavigationHelper extends HelperBase {
     super(wd);
   }
 
-  public void gotoGroupPage(String groups) {
+  public void gotoThePage(String page) {
 
-    click(By.linkText(groups));
+    click(By.linkText(page));
   }
 }

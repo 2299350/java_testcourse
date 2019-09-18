@@ -5,10 +5,11 @@ import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
 
-  FirefoxDriver wd;
+  public FirefoxDriver wd;
 
   private NavigationHelper navigationHelper;
   private GroupHelper groupHelper;
+  private ItemHelper itemHelper;
   private SessionHelper sessionHelper;
 
   public void init() {
@@ -19,6 +20,7 @@ public class ApplicationManager {
     groupHelper = new GroupHelper(wd);
     navigationHelper = new NavigationHelper(wd);
     sessionHelper = new SessionHelper(wd);
+    itemHelper = new ItemHelper(wd);
 
     sessionHelper.login("admin", "secret");
   }
@@ -35,11 +37,15 @@ public class ApplicationManager {
     return groupHelper;
   }
 
+  public ItemHelper getItemHelper() {
+    return itemHelper;
+  }
+
   public NavigationHelper getNavigationHelper() {
     return navigationHelper;
   }
 
-  public void gotoGroupPage(String groups) {
-    navigationHelper.gotoGroupPage(groups);
+  public void gotoThePage(String page) {
+    navigationHelper.gotoThePage(page);
   }
 }
