@@ -16,6 +16,11 @@ public class ItemHelper extends HelperBase {
     click(By.xpath("(//input[@name='submit'])[2]"));
   }
 
+  public void submitItemModification() {
+
+    click(By.xpath("(//input[@name='update'])[2]"));
+  }
+
   public void fillItemForm(ItemData itemData) {
 
     type(By.name("firstname"), itemData.getFirstname());
@@ -23,6 +28,22 @@ public class ItemHelper extends HelperBase {
     type(By.name("lastname"), itemData.getLastname());
     type(By.name("home"), itemData.getHome());
     type(By.name("mobile"), itemData.getMobile());
+  }
+
+  public void selectItem() {
+
+    click(By.name("selected[]"));
+  }
+
+  public void initItemModification() {
+
+    click(By.xpath("//img[@alt='Edit']"));
+  }
+
+  public void deleteSelectedItems() {
+
+    click(By.xpath("//input[@value='Delete']"));
+    wd.switchTo().alert().accept(); // confirmation pop-up
   }
 
   public void goToMainPage() {
