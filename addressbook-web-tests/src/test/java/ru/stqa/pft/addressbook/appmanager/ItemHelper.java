@@ -46,6 +46,11 @@ public class ItemHelper extends HelperBase {
     wd.switchTo().alert().accept(); // confirmation pop-up
   }
 
+  public void initItemCreation() {
+
+    click(By.linkText("add new"));
+  }
+
   public void goToMainPage() {
 
     wd.get("http://localhost:8080/");

@@ -12,6 +12,6 @@ public class NavigationHelper extends HelperBase {
 
   public void gotoThePage(String page) {
 
-    click(By.linkText(page));
+    wd.get(page);
   }
 }

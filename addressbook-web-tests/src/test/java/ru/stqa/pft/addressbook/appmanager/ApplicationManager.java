@@ -25,27 +25,28 @@ public class ApplicationManager {
     sessionHelper.login("admin", "secret");
   }
 
-
-
   public void stop() {
     sessionHelper.logout();
     wd.quit();
   }
 
-
   public GroupHelper getGroupHelper() {
+
     return groupHelper;
   }
 
   public ItemHelper getItemHelper() {
+
     return itemHelper;
   }
 
   public NavigationHelper getNavigationHelper() {
+
     return navigationHelper;
   }
 
-  public void gotoThePage(String page) {
-    navigationHelper.gotoThePage(page);
+  public void gotoGroupsPage() {
+
+    navigationHelper.gotoThePage("http://localhost:8080/group.php");
   }
 }
