@@ -79,4 +79,14 @@ public class ItemHelper extends HelperBase {
 
     wd.get("http://localhost:8080/");
   }
+
+  public void createItem(ItemData item) {
+    initItemCreation();
+    fillItemForm(item, true);
+    submitItemCreation();
+  }
+
+  public boolean isThereAnItem() {
+    return isElementPresent(By.xpath("(//img[@alt='Edit'])[last()]"));
+  }
 }
