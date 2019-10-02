@@ -9,8 +9,8 @@ public class ItemCreationTests extends TestBase{
   public void testItemCreation() throws Exception {
 
     app.getItemHelper().initItemCreation();
-    ItemData id = new ItemData("1f", "2f", "3f","4f","5f");
-    app.getItemHelper().fillItemForm(id);
+    ItemData id = new ItemData("100500", "6", "7","8","9", "Test3");
+    app.getItemHelper().fillItemForm(id, true);
     app.getItemHelper().submitItemCreation();
   }
 }

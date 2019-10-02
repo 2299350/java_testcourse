@@ -7,7 +7,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ItemData;
+
+import java.util.NoSuchElementException;
 
 public class ItemHelper extends HelperBase {
 
@@ -23,26 +27,56 @@ public class ItemHelper extends HelperBase {
 
   public void submitItemModification() {
 
-    click(By.xpath("(//input[@name='update'])[2]"));
+    wd.findElement(By.xpath("(//input[@name='update'])[2]")).click();
   }
 
-  public void fillItemForm(ItemData itemData) {
+  public void fillItemForm(ItemData itemData, boolean creation) {
 
     type(By.name("firstname"), itemData.getFirstname());
     type(By.name("middlename"), itemData.getMiddlename());
     type(By.name("lastname"), itemData.getLastname());
     type(By.name("home"), itemData.getHome());
     type(By.name("mobile"), itemData.getMobile());
+    if (!creation){
+      fillSelector("bday","1");
+      fillSelector("bmonth","January");
+      type(By.name("byear"), "1990");
+      Assert.assertFalse(isElementPresent(By.name("new_group")));
+    } else {
+      fillSelector("new_group","Test2");
+    }
+
+    /*if (creation) {
+      wd.findElement((By.name("new_group"))).click();
+      Select sE = new Select(wd.findElement(By.name("new_group")));
+      String gN = itemData.getGroup();
+      sE.selectByVisibleText(gN);
+      wd.findElement((By.name("new_group"))).click();
+      System.out.println("fillItemForm if");
+    } else {
+      System.out.println("fillItemForm else");
+
+      Assert.assertFalse(isElementPresent(By.name("new_group")));
+    }*/
+
+//    System.out.println(creation);
+  }
+
+  private void fillSelector(String sName, String value) {
+
+    wd.findElement(By.name(sName)).click();
+    new Select(wd.findElement(By.name(sName))).selectByVisibleText(value);
+    wd.findElement(By.name(sName)).click();
   }
 
   public void selectItem() {
 
-    click(By.name("selected[]"));
+    click(By.xpath("(//input[@name='selected[]'])[last()]"));
   }
 
   public void initItemModification() {
 
-    click(By.xpath("//img[@alt='Edit']"));
+    click(By.xpath("(//img[@alt='Edit'])[last()]"));
   }
 
   public void deleteSelectedItems() {

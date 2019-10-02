@@ -10,8 +10,8 @@ public class ItemModificationTests extends TestBase{
 
     app.getItemHelper().selectItem();
     app.getItemHelper().initItemModification();
-    ItemData id = new ItemData("1edited", "2edited", "3edited","4edited","5edited");
-    app.getItemHelper().fillItemForm(id);
+    ItemData id = new ItemData("1edited", "2edited", "3edited","4edited","5edited", null);
+    app.getItemHelper().fillItemForm(id, false);
     app.getItemHelper().submitItemModification();
   }
 }
