@@ -45,21 +45,6 @@ public class ItemHelper extends HelperBase {
     } else {
       fillSelector("new_group","Test2");
     }
-
-    /*if (creation) {
-      wd.findElement((By.name("new_group"))).click();
-      Select sE = new Select(wd.findElement(By.name("new_group")));
-      String gN = itemData.getGroup();
-      sE.selectByVisibleText(gN);
-      wd.findElement((By.name("new_group"))).click();
-      System.out.println("fillItemForm if");
-    } else {
-      System.out.println("fillItemForm else");
-
-      Assert.assertFalse(isElementPresent(By.name("new_group")));
-    }*/
-
-//    System.out.println(creation);
   }
 
   private void fillSelector(String sName, String value) {
