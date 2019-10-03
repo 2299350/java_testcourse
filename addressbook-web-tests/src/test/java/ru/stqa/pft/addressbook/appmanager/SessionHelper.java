@@ -20,7 +20,8 @@ public class SessionHelper extends HelperBase{
 
   public void logout() {
 
-    wd.findElement(By.linkText("Logout")).click();
+    wd.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
+    //wd.findElement(By.linkText("Logout")).click();
   }
 }
 

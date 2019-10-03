@@ -8,7 +8,7 @@ public class Collections {
 
   public static void main(String[] args) {
 
-/*    String[] langs = new String[4];
+/*  String[] langs = new String[4];
     langs[0] = "Java";
     langs[1] = "C#";
     langs[2] = "Python";
@@ -16,7 +16,7 @@ public class Collections {
     String[] langs = {"Java", "C#", "Python", "PHP"};
     //
 
-    /*List<String> languages = new ArrayList<>();
+  /*  List<String> languages = new ArrayList<>();
     languages.add("Java");
     languages.add("C#");
     languages.add("Python");

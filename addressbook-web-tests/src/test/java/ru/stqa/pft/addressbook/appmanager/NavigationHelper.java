@@ -30,4 +30,8 @@ public class NavigationHelper extends HelperBase {
     click(By.linkText("home"));
   }
 
+  public void findAndClick(By locator) {
+    wd.findElement(locator).click();
+  }
+
 }
