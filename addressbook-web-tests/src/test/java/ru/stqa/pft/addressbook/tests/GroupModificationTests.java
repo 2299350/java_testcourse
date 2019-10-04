@@ -16,7 +16,7 @@ public class GroupModificationTests extends TestBase {
     app.getNavigationHelper().gotoGroupPage();
 
     if (! app.getGroupHelper().isThereAGroup()) {
-      app.getGroupHelper().createGroup(new GroupData("Test1", "Header1", "Footer1"));
+      app.getGroupHelper().createGroup(new GroupData("No groups", "Header1", "Footer1"));
     }
 
     //int before = app.getGroupHelper().getGroupCount(); // number of groups before modification
@@ -24,8 +24,8 @@ public class GroupModificationTests extends TestBase {
 
     app.getGroupHelper().selectGroup(before.size()-1);
     app.getGroupHelper().initGroupModification();
-    String id = before.get(before.size() - 1).getId(); // Get Id of the last element of the list
-    GroupData group = new GroupData(id,"Test800", "edited header2", "edited footer2");
+    int id = before.get(before.size() - 1).getId(); // Get Id of the last element of the list
+    GroupData group = new GroupData(id,"Edited group", "edited header2", "edited footer2");
     app.getGroupHelper().fillGroupForm(group);
     app.getGroupHelper().submitGroupModification();
     app.getNavigationHelper().findAndClick(By.linkText("group page"));
