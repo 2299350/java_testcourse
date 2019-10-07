@@ -19,33 +19,17 @@ public class GroupCreationTests extends TestBase{
     //int before = app.getGroupHelper().getGroupCount(); // number of groups before adding
     GroupData group = new GroupData("TestLambda", "Header2", "Footer2");
     app.getGroupHelper().createGroup(group);
-    //int after = app.getGroupHelper().getGroupCount(); // number of groups after adding
     List<GroupData> after = app.getGroupHelper().getGroupList();
-    //Assert.assertEquals(after, before + 1);
     Assert.assertEquals(after.size(), before.size() + 1);
 
-    // Finding of the max id in List<GroupData> after
-    int max = 0;
-    for (GroupData g : after) {
-      if (g.getId() > max) {
-        max = g.getId();
-      }
-    }
-
-/*    Comparator<? super GroupData> byId = new Comparator<GroupData>() {
-      @Override
-      public int compare(GroupData o1, GroupData o2) {
-        return Integer.compare(o1.getId(), o2.getId());
-      }
-    };*/
-
-    Comparator<? super GroupData> byId = (Comparator<GroupData>) (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
-
-    after.stream().max(byId).get().getId();
-
-    group.setId(max); // giving the max id to the group
+    int maxId = after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId();
+    group.setId(maxId); // giving the max id to the group
     before.add(group);
 
-    Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
+    Comparator<? super GroupData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
+    before.sort(byId);
+    after.sort(byId);
+
+    Assert.assertEquals(before, after);
   }
 }
