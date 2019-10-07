@@ -57,9 +57,9 @@ public class ItemHelper extends HelperBase {
     wd.findElement(By.name(sName)).click();
   }
 
-  public void selectItem() {
-
-    click(By.xpath("(//input[@name='selected[]'])[last()]"));
+  public void selectItem(int index) {
+    //click(By.xpath("(//input[@name='selected[]'])[last()]"));
+    wd.findElements(By.name("selected[]")).get(index).click();
   }
 
   public void initItemModification() {

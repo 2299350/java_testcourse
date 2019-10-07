@@ -1,8 +1,10 @@
 package ru.stqa.pft.addressbook.tests;
-
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.*;
-import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.ItemData;
+
+import java.util.List;
 
 public class ItemDeletionTests extends TestBase{
 
@@ -14,7 +16,16 @@ public class ItemDeletionTests extends TestBase{
       app.getNavigationHelper().gotoHomePage();
     }
 
-    app.getItemHelper().selectItem();
+    List<ItemData> before = app.getItemHelper().getItemList();
+
+    app.getItemHelper().selectItem(before.size()-1);
     app.getItemHelper().deleteSelectedItems();
+    app.wd.findElement(By.linkText("home")).click();
+
+
+    List<ItemData> after = app.getItemHelper().getItemList();
+    before.remove(before.size() - 1);
+
+    Assert.assertEquals(before,after);
   }
 }
