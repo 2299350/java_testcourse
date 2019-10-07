@@ -19,7 +19,9 @@ public class GroupCreationTests extends TestBase{
     //int before = app.getGroupHelper().getGroupCount(); // number of groups before adding
     GroupData group = new GroupData("TestLambda", "Header2", "Footer2");
     app.getGroupHelper().createGroup(group);
+
     List<GroupData> after = app.getGroupHelper().getGroupList();
+
     Assert.assertEquals(after.size(), before.size() + 1);
 
     int maxId = after.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId();

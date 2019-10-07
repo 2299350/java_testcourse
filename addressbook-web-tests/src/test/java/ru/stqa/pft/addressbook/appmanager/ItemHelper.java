@@ -2,6 +2,7 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -11,6 +12,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ItemData;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 public class ItemHelper extends HelperBase {
@@ -88,5 +91,21 @@ public class ItemHelper extends HelperBase {
 
   public boolean isThereAnItem() {
     return isElementPresent(By.xpath("(//img[@alt='Edit'])[last()]"));
+  }
+
+  public List<ItemData> getItemList() {
+    List<ItemData> items = new ArrayList<ItemData>();
+    List<WebElement> elements = wd.findElements(By.cssSelector("#maintable tr"));
+    elements.remove(0);
+
+    for (WebElement e : elements) {
+      String firstname = e.findElement(By.cssSelector("td:nth-child(3)")).getText();
+      String lastname = e.findElement(By.cssSelector("td:nth-child(2)")).getText();
+
+      ItemData item = new ItemData(firstname, lastname);
+      items.add(item);
+    }
+
+    return items;
   }
 }
