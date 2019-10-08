@@ -21,7 +21,6 @@ public class ItemModificationTests extends TestBase{
 
     List<ItemData> before = app.getItemHelper().getItemList();
 
-    app.getItemHelper().selectItem(before.size()-1);
     app.getItemHelper().initItemModification();
     ItemData id = new ItemData("1edited", "2edited", "3edited","4edited","5edited", null);
     app.getItemHelper().fillItemForm(id, false);
