@@ -62,9 +62,19 @@ public class ItemHelper extends HelperBase {
     wd.findElements(By.name("selected[]")).get(index).click();
   }
 
-  public void initItemModification() {
-
-    click(By.xpath("(//img[@alt='Edit'])[last()]"));
+  public void initItemModification(int index) {
+    String path;
+    int innerIndex = index;
+    try {
+      if (index == 0) {
+        path = "(//img[@alt='Edit'])[last()]";
+      } else {
+        path = "(//img[@alt='Edit'])[" + innerIndex + "]";
+      }
+      click(By.xpath(path));
+    } catch (NoSuchElementException ex) {
+      System.out.println("There isn't such an element on the page | ItemHelper");
+    }
   }
 
   public void deleteSelectedItems() {

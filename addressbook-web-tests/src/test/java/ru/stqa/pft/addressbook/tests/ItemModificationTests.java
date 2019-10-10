@@ -20,18 +20,25 @@ public class ItemModificationTests extends TestBase{
     }
 
     List<ItemData> before = app.getItemHelper().getItemList();
+    int index = 4; //use 0 for the last element
 
-    app.getItemHelper().initItemModification();
-    ItemData id = new ItemData("1edited", "2edited", "3edited","4edited","5edited", null);
+    app.getItemHelper().initItemModification(index);
+    ItemData id = new ItemData("1edited", "2edited", "Edited","4edited","5edited", null);
     app.getItemHelper().fillItemForm(id, false);
     app.getItemHelper().submitItemModification();
     app.wd.findElement(By.linkText("home page")).click();
 
     List<ItemData> after = app.getItemHelper().getItemList();
-    before.remove(before.size()-1);
-    before.add(id);
+    if (index == 0) {
+      before.remove(before.size() - 1);
+      before.add(id);
+    } else {
+      before.remove(index - 1);
+      before.add(index-1, id);
+    }
 
-    Comparator<? super ItemData> byName = (g1, g2) -> g1.getFirstname().compareTo(g2.getFirstname());
+
+    Comparator<? super ItemData> byName = (g1, g2) -> g1.getLastname().compareTo(g2.getLastname());
     before.sort(byName);
     after.sort(byName);
 
