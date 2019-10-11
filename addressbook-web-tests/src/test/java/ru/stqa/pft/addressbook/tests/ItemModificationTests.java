@@ -10,13 +10,13 @@ import java.util.List;
 
 public class ItemModificationTests extends TestBase{
 
-  @Test
+  @Test (enabled = false)
   public void testItemModification() throws Exception {
 
     if (! app.getItemHelper().isThereAnItem()) {
       System.out.println(! app.getItemHelper().isThereAnItem());
       app.getItemHelper().createItem(new ItemData("100500", "6", "7","8","9", "Test3"));
-      app.getNavigationHelper().gotoHomePage();
+      app.goTo().gotoHomePage();
     }
 
     List<ItemData> before = app.getItemHelper().getItemList();
