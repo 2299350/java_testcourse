@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ItemCreationTests extends TestBase{
 
-  @Test
+  @Test (enabled = false)
   public void testItemCreation() throws Exception {
 
     List<ItemData> before = app.getItemHelper().getItemList();

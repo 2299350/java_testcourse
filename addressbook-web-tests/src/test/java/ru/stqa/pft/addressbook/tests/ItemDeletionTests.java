@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ItemDeletionTests extends TestBase{
 
-  @Test
+  @Test (enabled = false)
   public void testItemDeletion() throws Exception {
 
     if (! app.getItemHelper().isThereAnItem()) {

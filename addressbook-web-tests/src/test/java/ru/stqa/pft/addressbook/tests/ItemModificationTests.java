@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ItemModificationTests extends TestBase{
 
-  @Test
+  @Test (enabled = false)
   public void testItemModification() throws Exception {
 
     if (! app.getItemHelper().isThereAnItem()) {
@@ -36,7 +36,6 @@ public class ItemModificationTests extends TestBase{
       before.remove(index - 1);
       before.add(index-1, id);
     }
-
 
     Comparator<? super ItemData> byName = (g1, g2) -> g1.getLastname().compareTo(g2.getLastname());
     before.sort(byName);
