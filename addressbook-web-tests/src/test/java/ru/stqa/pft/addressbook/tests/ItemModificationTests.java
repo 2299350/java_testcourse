@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ItemModificationTests extends TestBase{
 
-  @Test (enabled = false)
+  @Test
   public void testItemModification() throws Exception {
 
     if (! app.getItemHelper().isThereAnItem()) {
@@ -23,18 +23,18 @@ public class ItemModificationTests extends TestBase{
     int index = 4; //use 0 for the last element
 
     app.getItemHelper().initItemModification(index);
-    ItemData id = new ItemData("1edited", "2edited", "Edited","4edited","5edited", null);
-    app.getItemHelper().fillItemForm(id, false);
+    ItemData iData = new ItemData("1edited", "2edited", "Edited","4edited","5edited", null);
+    app.getItemHelper().fillItemForm(iData, false);
     app.getItemHelper().submitItemModification();
     app.wd.findElement(By.linkText("home page")).click();
 
     List<ItemData> after = app.getItemHelper().getItemList();
     if (index == 0) {
       before.remove(before.size() - 1);
-      before.add(id);
+      before.add(iData);
     } else {
       before.remove(index - 1);
-      before.add(index-1, id);
+      before.add(index-1, iData);
     }
 
     Comparator<? super ItemData> byName = (g1, g2) -> g1.getLastname().compareTo(g2.getLastname());

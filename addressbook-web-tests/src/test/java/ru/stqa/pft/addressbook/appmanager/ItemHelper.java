@@ -63,15 +63,8 @@ public class ItemHelper extends HelperBase {
   }
 
   public void initItemModification(int index) {
-    String path;
-    int innerIndex = index;
     try {
-      if (index == 0) {
-        path = "(//img[@alt='Edit'])[last()]";
-      } else {
-        path = "(//img[@alt='Edit'])[" + innerIndex + "]";
-      }
-      click(By.xpath(path));
+      click(By.xpath("(//img[@alt='Edit'])[" + index + "]"));
     } catch (NoSuchElementException ex) {
       System.out.println("There isn't such an element on the page | ItemHelper");
     }
