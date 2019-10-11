@@ -11,22 +11,18 @@ import java.util.List;
 public class GroupHelper extends HelperBase {
 
   public GroupHelper(WebDriver wd) {
-
     super(wd);
   }
 
   public void returnToGroupPage() {
-
     click(By.linkText("group page"));
   }
 
   public void submitGroupCreation() {
-
     click(By.name("submit"));
   }
 
   public void submitGroupModification() {
-
     click(By.name("update"));
   }
 
@@ -38,31 +34,33 @@ public class GroupHelper extends HelperBase {
   }
 
   public void initGroupCreation() {
-
     click(By.name("new"));
   }
 
   public void deleteSelectedGroups() {
-
     click(By.name("delete"));
   }
 
   public void selectGroup(int index) {
     wd.findElements(By.name("selected[]")).get(index).click();
-
-//    click(By.name("selected[]"));
   }
 
   public void initGroupModification() {
-
     click(By.name("edit"));
   }
 
   public void createGroup(GroupData group) {
-
     initGroupCreation();
     fillGroupForm(group);
     submitGroupCreation();
+    returnToGroupPage();
+  }
+
+  public void modifyGroup(int index, GroupData editingGroup) {
+    selectGroup(index);
+    initGroupModification();
+    fillGroupForm(editingGroup);
+    submitGroupModification();
     returnToGroupPage();
   }
 
