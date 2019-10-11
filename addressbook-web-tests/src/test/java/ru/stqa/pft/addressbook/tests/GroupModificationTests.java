@@ -14,7 +14,7 @@ public class GroupModificationTests extends TestBase {
   public void ensurePreconditions() {
 
     app.goTo().groupPage();
-    GroupData noGroups = new GroupData("No groups", "Header1", "Footer1");
+    GroupData noGroups = new GroupData().withName("No groups").withHeader("Header1").withFooter("Footer1");
     if (app.group().list().size() == 0) {
       app.group().create(noGroups);
     }
@@ -27,7 +27,8 @@ public class GroupModificationTests extends TestBase {
 
     int index = before.size() - 1;
     int id = before.get(index).getId(); // Get Id of the n-element of the list
-    GroupData editingGroup = new GroupData(id,"Edited group", "edited header2", "edited footer2");
+    GroupData editingGroup = new GroupData()
+            .withId(id).withName("Edited group").withHeader("edited header2").withFooter("edited footer2");
 
     app.group().modify(index, editingGroup);
 
