@@ -11,4 +11,6 @@ repositories {
 dependencies {
     compile 'org.testng:testng:7.0.0'
     compile 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-2'
+    // https://mvnrepository.com/artifact/org.hamcrest/hamcrest
+    testCompile group: 'org.hamcrest', name: 'hamcrest', version: '2.1'
 }
