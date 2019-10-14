@@ -10,7 +10,7 @@ import java.util.List;
 
 public class ItemModificationTests extends TestBase{
 
-  @Test (enabled = false)
+  @Test
   public void testItemModification() throws Exception {
 
     if (! app.getItemHelper().isThereAnItem()) {
@@ -20,7 +20,7 @@ public class ItemModificationTests extends TestBase{
     }
 
     List<ItemData> before = app.getItemHelper().getItemList();
-    int index = 4;
+    int index = before.size();
 
     app.getItemHelper().initItemModification(index);
     ItemData iData = new ItemData("1edited", "2edited", "Edited","4edited","5edited", null);
