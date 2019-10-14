@@ -3,8 +3,7 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.GroupData;
-
-import java.util.List;
+import java.util.Set;
 
 public class GroupDeletionTests extends TestBase{
 
@@ -13,7 +12,7 @@ public class GroupDeletionTests extends TestBase{
 
     app.goTo().groupPage();
     GroupData noGroups = new GroupData().withName("No groups").withHeader("Header1").withFooter("Footer1");
-    if (app.group().list().size() == 0) {
+    if (app.group().all().size() == 0) {
       app.group().create(noGroups);
     }
   }
@@ -21,16 +20,16 @@ public class GroupDeletionTests extends TestBase{
   @Test
   public void testGroupDeletion() throws Exception {
 
-    List<GroupData> before = app.group().list();
-    int index = before.size()-1;
+    Set<GroupData> before = app.group().all();
+    GroupData deletedGroup = before.iterator().next();
 
-    app.group().delete(index);
+    app.group().delete(deletedGroup);
 
-    List<GroupData> after = app.group().list();
+    Set<GroupData> after = app.group().all();
 
     Assert.assertEquals(after.size(), before.size() - 1);
 
-    before.remove(index);
+    before.remove(deletedGroup);
 
     Assert.assertEquals(before,after); // Comparison of lists (List<GroupData>)
   }

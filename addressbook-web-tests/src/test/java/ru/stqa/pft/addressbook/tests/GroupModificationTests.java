@@ -4,9 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
-
-import java.util.Comparator;
-import java.util.List;
+import java.util.Set;
 
 public class GroupModificationTests extends TestBase {
 
@@ -15,7 +13,7 @@ public class GroupModificationTests extends TestBase {
 
     app.goTo().groupPage();
     GroupData noGroups = new GroupData().withName("No groups").withHeader("Header1").withFooter("Footer1");
-    if (app.group().list().size() == 0) {
+    if (app.group().all().size() == 0) {
       app.group().create(noGroups);
     }
   }
@@ -23,25 +21,20 @@ public class GroupModificationTests extends TestBase {
   @Test
   public void testGroupModification() {
 
-    List<GroupData> before = app.group().list();
+    Set<GroupData> before = app.group().all();
+    GroupData modifiedGroup = before.iterator().next(); // random group selection
 
-    int index = before.size() - 1;
-    int id = before.get(index).getId(); // Get Id of the n-element of the list
-    GroupData editingGroup = new GroupData()
-            .withId(id).withName("Edited group").withHeader("edited header2").withFooter("edited footer2");
+    GroupData group = new GroupData()
+            .withId(modifiedGroup.getId()).withName("Edited group").withHeader("edited header2").withFooter("edited footer2");
 
-    app.group().modify(index, editingGroup);
+    app.group().modify(group);
 
-    List<GroupData> after = app.group().list();
+    Set<GroupData> after = app.group().all();
 
     Assert.assertEquals(before.size(), after.size());
 
-    before.remove(index);
-    before.add(editingGroup);
-
-    Comparator<? super GroupData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
-    before.sort(byId);
-    after.sort(byId);
+    before.remove(modifiedGroup);
+    before.add(group);
 
     Assert.assertEquals(before,after);
   }
