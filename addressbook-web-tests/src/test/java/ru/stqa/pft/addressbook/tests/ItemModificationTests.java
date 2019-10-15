@@ -11,7 +11,7 @@ public class ItemModificationTests extends TestBase{
   @BeforeMethod
   public void ensurePreconditions() {
     if (app.item().list().size() == 0) {
-      app.item().create(new ItemData("100500", "6", "7","8","9", "Test3"));
+      app.item().create(new ItemData().withFName("FName").withMName("MName").withLName("Absence"));
       app.goTo().gotoHomePage();
     }
   }
@@ -22,7 +22,7 @@ public class ItemModificationTests extends TestBase{
     List<ItemData> before = app.item().list();
     int index = before.size();
 
-    ItemData iData = new ItemData("1edited", "2edited", "Edited","4edited","5edited", null);
+    ItemData iData = new ItemData().withFName("FName").withMName("MName").withLName("Edited");
 
     app.item().modify(index, iData);
 

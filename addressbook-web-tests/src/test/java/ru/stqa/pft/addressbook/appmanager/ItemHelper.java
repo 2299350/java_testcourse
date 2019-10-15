@@ -113,7 +113,7 @@ public class ItemHelper extends HelperBase {
       String firstname = e.findElement(By.cssSelector("td:nth-child(3)")).getText();
       String lastname = e.findElement(By.cssSelector("td:nth-child(2)")).getText();
 
-      ItemData item = new ItemData(firstname, lastname);
+      ItemData item = new ItemData().withFName(firstname).withLName(lastname);
       items.add(item);
     }
 

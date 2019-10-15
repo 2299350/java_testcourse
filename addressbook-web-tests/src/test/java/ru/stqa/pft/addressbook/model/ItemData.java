@@ -4,51 +4,54 @@ import java.util.Objects;
 
 public class ItemData {
 
-  private final String firstname;
-  private final String middlename;
-  private final String lastname;
-  private final String home;
-  private final String mobile;
+  private String firstname;
+  private String middlename;
+  private String lastname;
+  private String home;
+  private String mobile;
   private String group;
 
-  public ItemData(String firstname, String middlename, String lastname, String home, String mobile, String group) {
-
+  public ItemData withFName(String firstname) {
     this.firstname = firstname;
+    return this;
+  }
+
+  public ItemData withMName(String middlename) {
     this.middlename = middlename;
+    return this;
+  }
+
+  public ItemData withLName(String lastname) {
     this.lastname = lastname;
+    return this;
+  }
+
+  public ItemData withHome(String home) {
     this.home = home;
+    return this;
+  }
+
+  public ItemData withMobile(String mobile) {
     this.mobile = mobile;
+    return this;
+  }
+
+  public ItemData withGroup(String group) {
     this.group = group;
+    return this;
   }
 
-  public ItemData(String firstname, String lastname) {
+  public String getFirstname() {return firstname;}
 
-    this.firstname = firstname;
-    this.middlename = null;
-    this.lastname = lastname;
-    this.home = null;
-    this.mobile = null;
-    this.group = "ItemHelper";
-  }
+  public String getMiddlename() {return middlename;}
 
-  public String getFirstname() {
-    return firstname;
-  }
+  public String getLastname() {return lastname;}
 
-  public String getMiddlename() {
+  public String getHome() {return home;}
 
-    return middlename;
-  }
+  public String getMobile() {return mobile;}
 
-  public String getLastname() {
-
-    return lastname;
-  }
-
-  public String getHome() {
-
-    return home;
-  }
+  public String getGroup() {return group;}
 
   @Override
   public boolean equals(Object o) {
@@ -62,15 +65,5 @@ public class ItemData {
   @Override
   public int hashCode() {
     return Objects.hash(firstname, lastname);
-  }
-
-  public String getMobile() {
-
-    return mobile;
-  }
-
-  public String getGroup() {
-
-    return group;
   }
 }

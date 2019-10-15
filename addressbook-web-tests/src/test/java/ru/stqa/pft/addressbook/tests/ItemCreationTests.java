@@ -13,7 +13,9 @@ public class ItemCreationTests extends TestBase{
 
     List<ItemData> before = app.item().list();
 
-    ItemData item = new ItemData("100500", "6", "LastName","8","9", "Test3");
+    ItemData item = new ItemData()
+            .withFName("FName").withMName("MName").withLName("LName")
+            .withHome("+79203696563").withMobile("+79203696563").withGroup("Group#1");
 
     app.item().create(item);
 
