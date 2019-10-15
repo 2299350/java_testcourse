@@ -3,15 +3,9 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.BrowserType;
-
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ItemData;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -46,7 +40,7 @@ public class ItemHelper extends HelperBase {
       type(By.name("byear"), "1990");
       Assert.assertFalse(isElementPresent(By.name("new_group")));
     } else {
-      fillSelector("new_group","Test2");
+      fillSelector("new_group","Edited group");
     }
   }
 
@@ -86,17 +80,31 @@ public class ItemHelper extends HelperBase {
     wd.get("http://localhost:8080/");
   }
 
-  public void createItem(ItemData item) {
+  public void create(ItemData item) {
     initItemCreation();
     fillItemForm(item, true);
     submitItemCreation();
+    wd.findElement(By.linkText("home page")).click();
+  }
+
+  public void modify(int index, ItemData iData) {
+    initItemModification(index);
+    fillItemForm(iData, false);
+    submitItemModification();
+    click(By.linkText("home page"));
+  }
+
+  public void delete(int index) {
+    selectItem(index);
+    deleteSelectedItems();
+    wd.findElement(By.linkText("home")).click();
   }
 
   public boolean isThereAnItem() {
     return isElementPresent(By.xpath("(//img[@alt='Edit'])[last()]"));
   }
 
-  public List<ItemData> getItemList() {
+  public List<ItemData> list() {
     List<ItemData> items = new ArrayList<ItemData>();
     List<WebElement> elements = wd.findElements(By.cssSelector("#maintable tr"));
     elements.remove(0);

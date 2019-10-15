@@ -1,34 +1,33 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ItemData;
-
 import java.util.Comparator;
 import java.util.List;
 
 public class ItemModificationTests extends TestBase{
 
+  @BeforeMethod
+  public void ensurePreconditions() {
+    if (app.item().list().size() == 0) {
+      app.item().create(new ItemData("100500", "6", "7","8","9", "Test3"));
+      app.goTo().gotoHomePage();
+    }
+  }
+
   @Test
   public void testItemModification() throws Exception {
 
-    if (! app.getItemHelper().isThereAnItem()) {
-      System.out.println(! app.getItemHelper().isThereAnItem());
-      app.getItemHelper().createItem(new ItemData("100500", "6", "7","8","9", "Test3"));
-      app.goTo().gotoHomePage();
-    }
-
-    List<ItemData> before = app.getItemHelper().getItemList();
+    List<ItemData> before = app.item().list();
     int index = before.size();
 
-    app.getItemHelper().initItemModification(index);
     ItemData iData = new ItemData("1edited", "2edited", "Edited","4edited","5edited", null);
-    app.getItemHelper().fillItemForm(iData, false);
-    app.getItemHelper().submitItemModification();
-    app.wd.findElement(By.linkText("home page")).click();
 
-    List<ItemData> after = app.getItemHelper().getItemList();
+    app.item().modify(index, iData);
+
+    List<ItemData> after = app.item().list();
+
     before.remove(index - 1);
     before.add(index-1, iData);
 

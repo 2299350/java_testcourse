@@ -1,30 +1,30 @@
 package ru.stqa.pft.addressbook.tests;
-import org.openqa.selenium.By;
+
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ItemData;
-
 import java.util.List;
 
 public class ItemDeletionTests extends TestBase{
 
-  @Test (enabled = false)
-  public void testItemDeletion() throws Exception {
-
-    if (! app.getItemHelper().isThereAnItem()) {
-      app.getItemHelper().createItem(new ItemData("100500", "6", "7","8","9", "Test3"));
+  @BeforeMethod
+  public void ensurePreconditions() {
+    if (app.item().list().size() == 0) {
+      app.item().create(new ItemData("100500", "6", "7","8","9", "Test3"));
       app.goTo().gotoHomePage();
     }
+  }
 
-    List<ItemData> before = app.getItemHelper().getItemList();
+  @Test
+  public void testItemDeletion() throws Exception {
 
-    app.getItemHelper().selectItem(before.size()-1);
-    app.getItemHelper().deleteSelectedItems();
-    app.wd.findElement(By.linkText("home")).click();
+    List<ItemData> before = app.item().list();
+    int index = before.size() - 1;
 
+    app.item().delete(index);
 
-    List<ItemData> after = app.getItemHelper().getItemList();
-    before.remove(before.size() - 1);
+    List<ItemData> after = app.item().list();
+    before.remove(index);
 
     Assert.assertEquals(before,after);
   }

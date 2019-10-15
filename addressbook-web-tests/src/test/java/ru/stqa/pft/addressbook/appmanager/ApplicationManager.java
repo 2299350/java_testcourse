@@ -51,7 +51,7 @@ public class ApplicationManager {
     return groupHelper;
   }
 
-  public ItemHelper getItemHelper() {
+  public ItemHelper item() {
 
     return itemHelper;
   }
