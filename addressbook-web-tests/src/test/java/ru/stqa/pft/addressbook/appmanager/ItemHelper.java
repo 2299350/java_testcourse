@@ -6,9 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ItemData;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 public class ItemHelper extends HelperBase {
 
@@ -52,16 +50,15 @@ public class ItemHelper extends HelperBase {
   }
 
   public void selectItem(int index) {
-    //click(By.xpath("(//input[@name='selected[]'])[last()]"));
     wd.findElements(By.name("selected[]")).get(index).click();
   }
 
-  public void initItemModification(int index) {
-    try {
-      click(By.xpath("(//img[@alt='Edit'])[" + index + "]"));
-    } catch (NoSuchElementException ex) {
-      System.out.println("There isn't such an element on the page | ItemHelper");
-    }
+  public void selectItemById(int id) {
+    wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+  }
+
+  public void initItemModificationById(int id) {
+      click(By.cssSelector("a[href='edit.php?id=" + id + "']"));
   }
 
   public void deleteSelectedItems() {
@@ -75,11 +72,6 @@ public class ItemHelper extends HelperBase {
     click(By.linkText("add new"));
   }
 
-  public void goToMainPage() {
-
-    wd.get("http://localhost:8080/");
-  }
-
   public void create(ItemData item) {
     initItemCreation();
     fillItemForm(item, true);
@@ -87,9 +79,9 @@ public class ItemHelper extends HelperBase {
     wd.findElement(By.linkText("home page")).click();
   }
 
-  public void modify(int index, ItemData iData) {
-    initItemModification(index);
-    fillItemForm(iData, false);
+  public void modify(ItemData item) {
+    initItemModificationById(item.getId());
+    fillItemForm(item, false);
     submitItemModification();
     click(By.linkText("home page"));
   }
@@ -100,12 +92,19 @@ public class ItemHelper extends HelperBase {
     wd.findElement(By.linkText("home")).click();
   }
 
+  public void delete(ItemData item) {
+    selectItemById(item.getId());
+    deleteSelectedItems();
+    wd.findElement(By.linkText("home")).click();
+  }
+
   public boolean isThereAnItem() {
     return isElementPresent(By.xpath("(//img[@alt='Edit'])[last()]"));
   }
 
-  public List<ItemData> list() {
-    List<ItemData> items = new ArrayList<ItemData>();
+  public Set<ItemData> all() {
+
+    Set<ItemData> items = new HashSet<ItemData>();
     List<WebElement> elements = wd.findElements(By.cssSelector("#maintable tr"));
     elements.remove(0);
 
@@ -113,10 +112,12 @@ public class ItemHelper extends HelperBase {
       String firstname = e.findElement(By.cssSelector("td:nth-child(3)")).getText();
       String lastname = e.findElement(By.cssSelector("td:nth-child(2)")).getText();
 
-      ItemData item = new ItemData().withFName(firstname).withLName(lastname);
+      String link = e.findElement(By.cssSelector("td:nth-child(8) > a")).getAttribute("href"); // get link
+      int id = Integer. parseInt(link.substring(link.lastIndexOf("=") + 1)); // get id from link
+
+      ItemData item = new ItemData().withFName(firstname).withLName(lastname).withId(id);
       items.add(item);
     }
-
     return items;
   }
 }

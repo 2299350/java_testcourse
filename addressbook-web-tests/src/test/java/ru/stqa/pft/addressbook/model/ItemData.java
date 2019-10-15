@@ -4,12 +4,14 @@ import java.util.Objects;
 
 public class ItemData {
 
+  private int id = Integer.MAX_VALUE; //?
   private String firstname;
   private String middlename;
   private String lastname;
   private String home;
   private String mobile;
   private String group;
+
 
   public ItemData withFName(String firstname) {
     this.firstname = firstname;
@@ -41,6 +43,11 @@ public class ItemData {
     return this;
   }
 
+  public ItemData withId(int id) {
+    this.id = id;
+    return this;
+  }
+
   public String getFirstname() {return firstname;}
 
   public String getMiddlename() {return middlename;}
@@ -53,17 +60,20 @@ public class ItemData {
 
   public String getGroup() {return group;}
 
+  public int getId() {return id;}
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     ItemData itemData = (ItemData) o;
-    return Objects.equals(firstname, itemData.firstname) &&
+    return id == itemData.id &&
             Objects.equals(lastname, itemData.lastname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(firstname, lastname);
+    return Objects.hash(id, lastname);
   }
+
 }

@@ -3,14 +3,13 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ItemData;
-import java.util.Comparator;
-import java.util.List;
+import java.util.Set;
 
 public class ItemModificationTests extends TestBase{
 
   @BeforeMethod
   public void ensurePreconditions() {
-    if (app.item().list().size() == 0) {
+    if (app.item().all().size() == 0) {
       app.item().create(new ItemData().withFName("FName").withMName("MName").withLName("Absence"));
       app.goTo().gotoHomePage();
     }
@@ -19,21 +18,17 @@ public class ItemModificationTests extends TestBase{
   @Test
   public void testItemModification() throws Exception {
 
-    List<ItemData> before = app.item().list();
-    int index = before.size();
+    Set<ItemData> before = app.item().all();
+    ItemData modifiedItem = before.iterator().next();
 
-    ItemData iData = new ItemData().withFName("FName").withMName("MName").withLName("Edited");
+    ItemData item = new ItemData().withFName("FName").withMName("MName").withLName("Edited").withId(modifiedItem.getId());
 
-    app.item().modify(index, iData);
+    app.item().modify(item);
 
-    List<ItemData> after = app.item().list();
+    Set<ItemData> after = app.item().all();
 
-    before.remove(index - 1);
-    before.add(index-1, iData);
-
-    Comparator<? super ItemData> byName = (g1, g2) -> g1.getLastname().compareTo(g2.getLastname());
-    before.sort(byName);
-    after.sort(byName);
+    before.remove(modifiedItem);
+    before.add(item);
 
     Assert.assertEquals(before, after);
   }

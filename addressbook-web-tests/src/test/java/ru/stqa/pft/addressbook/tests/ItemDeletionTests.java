@@ -3,13 +3,13 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ItemData;
-import java.util.List;
+import java.util.Set;
 
 public class ItemDeletionTests extends TestBase{
 
   @BeforeMethod
   public void ensurePreconditions() {
-    if (app.item().list().size() == 0) {
+    if (app.item().all().size() == 0) {
       app.item().create(new ItemData().withFName("FName").withMName("MName").withLName("Absence"));
       app.goTo().gotoHomePage();
     }
@@ -18,13 +18,13 @@ public class ItemDeletionTests extends TestBase{
   @Test
   public void testItemDeletion() throws Exception {
 
-    List<ItemData> before = app.item().list();
-    int index = before.size() - 1;
+    Set<ItemData> before = app.item().all();
+    ItemData deletedItem = before.iterator().next();
 
-    app.item().delete(index);
+    app.item().delete(deletedItem);
 
-    List<ItemData> after = app.item().list();
-    before.remove(index);
+    Set<ItemData> after = app.item().all();
+    before.remove(deletedItem);
 
     Assert.assertEquals(before,after);
   }
