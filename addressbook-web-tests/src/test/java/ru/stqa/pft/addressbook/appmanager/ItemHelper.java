@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ItemData;
+import ru.stqa.pft.addressbook.model.Items;
+
 import java.util.*;
 
 public class ItemHelper extends HelperBase {
@@ -102,9 +104,9 @@ public class ItemHelper extends HelperBase {
     return isElementPresent(By.xpath("(//img[@alt='Edit'])[last()]"));
   }
 
-  public Set<ItemData> all() {
+  public Items all() {
 
-    Set<ItemData> items = new HashSet<ItemData>();
+    Items items = new Items();
     List<WebElement> elements = wd.findElements(By.cssSelector("#maintable tr"));
     elements.remove(0);
 

@@ -3,7 +3,9 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ItemData;
-import java.util.Set;
+import ru.stqa.pft.addressbook.model.Items;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ItemModificationTests extends TestBase{
 
@@ -18,18 +20,15 @@ public class ItemModificationTests extends TestBase{
   @Test
   public void testItemModification() throws Exception {
 
-    Set<ItemData> before = app.item().all();
+    Items before = app.item().all();
     ItemData modifiedItem = before.iterator().next();
 
     ItemData item = new ItemData().withFName("FName").withMName("MName").withLName("Edited").withId(modifiedItem.getId());
 
     app.item().modify(item);
 
-    Set<ItemData> after = app.item().all();
+    Items after = app.item().all();
 
-    before.remove(modifiedItem);
-    before.add(item);
-
-    Assert.assertEquals(before, after);
+    assertThat(after, equalTo(before.without(modifiedItem).withAdded(item)));
   }
 }

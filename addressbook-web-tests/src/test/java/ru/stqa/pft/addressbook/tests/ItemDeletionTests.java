@@ -1,9 +1,10 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ItemData;
-import java.util.Set;
+import ru.stqa.pft.addressbook.model.Items;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ItemDeletionTests extends TestBase{
 
@@ -18,14 +19,13 @@ public class ItemDeletionTests extends TestBase{
   @Test
   public void testItemDeletion() throws Exception {
 
-    Set<ItemData> before = app.item().all();
+    Items before = app.item().all();
     ItemData deletedItem = before.iterator().next();
 
     app.item().delete(deletedItem);
 
-    Set<ItemData> after = app.item().all();
-    before.remove(deletedItem);
+    Items after = app.item().all();
 
-    Assert.assertEquals(before,after);
+    assertThat(after, equalTo(before.without(deletedItem)));
   }
 }
