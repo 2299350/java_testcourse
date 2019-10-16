@@ -10,6 +10,7 @@ public class ItemData {
   private String lastname;
   private String home;
   private String mobile;
+  private String work;
   private String group;
 
 
@@ -38,6 +39,11 @@ public class ItemData {
     return this;
   }
 
+  public ItemData withWork(String work) {
+    this.work = work;
+    return this;
+  }
+
   public ItemData withGroup(String group) {
     this.group = group;
     return this;
@@ -57,6 +63,8 @@ public class ItemData {
   public String getHome() {return home;}
 
   public String getMobile() {return mobile;}
+
+  public String getWork() {return work;}
 
   public String getGroup() {return group;}
 

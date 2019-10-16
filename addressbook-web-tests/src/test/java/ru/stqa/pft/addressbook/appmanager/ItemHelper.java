@@ -34,6 +34,7 @@ public class ItemHelper extends HelperBase {
     type(By.name("lastname"), itemData.getLastname());
     type(By.name("home"), itemData.getHome());
     type(By.name("mobile"), itemData.getMobile());
+    type(By.name("work"), itemData.getWork());
     if (!creation){
       fillSelector("bday","1");
       fillSelector("bmonth","January");
@@ -60,7 +61,10 @@ public class ItemHelper extends HelperBase {
   }
 
   public void initItemModificationById(int id) {
-      click(By.cssSelector("a[href='edit.php?id=" + id + "']"));
+
+    click(By.cssSelector(String.format("a[href='edit.php?id=%s']", id)));
+    //wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
+    //click(By.cssSelector("a[href='edit.php?id=" + id + "']"));
   }
 
   public void deleteSelectedItems() {
@@ -122,5 +126,18 @@ public class ItemHelper extends HelperBase {
       itemCache.add(item);
     }
     return new Items(itemCache); // return a itemCache copy;
+  }
+
+  public ItemData infoFromEditForm (ItemData item) {
+    initItemModificationById(item.getId());
+    String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
+    String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
+    String home = wd.findElement(By.name("home")).getAttribute("value");
+    String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
+    String work = wd.findElement(By.name("work")).getAttribute("value");
+    wd.navigate().back();
+    return new ItemData()
+            .withId(item.getId()).withFName(firstname).withLName(lastname).withHome(home).withMobile(mobile).withWork(work);
+
   }
 }
