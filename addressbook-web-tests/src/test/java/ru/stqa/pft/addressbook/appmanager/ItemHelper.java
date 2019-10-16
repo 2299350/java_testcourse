@@ -120,13 +120,14 @@ public class ItemHelper extends HelperBase {
       String lastname = e.findElement(By.cssSelector("td:nth-child(2)")).getText();
 
       String allPhones = e.findElement(By.cssSelector("td:nth-child(6)")).getText();
-      String[] phones = allPhones.split("\n");
+      //String[] phones = allPhones.split("\n");
 
       String link = e.findElement(By.cssSelector("td:nth-child(8) > a")).getAttribute("href"); // get link
       int id = Integer. parseInt(link.substring(link.lastIndexOf("=") + 1)); // get id from link
 
       ItemData item = new ItemData().withFName(firstname).withLName(lastname).withId(id)
-              .withHome(phones[0]).withMobile(phones[1]).withWork(phones[2]);
+              .withAllPhones(allPhones);
+              //.withHome(phones[0]).withMobile(phones[1]).withWork(phones[2]);
       itemCache.add(item);
     }
     return new Items(itemCache); // return a itemCache copy;

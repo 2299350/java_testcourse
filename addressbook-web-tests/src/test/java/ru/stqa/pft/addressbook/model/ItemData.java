@@ -11,6 +11,7 @@ public class ItemData {
   private String home;
   private String mobile;
   private String work;
+  private String allPhones;
   private String group;
 
 
@@ -44,6 +45,11 @@ public class ItemData {
     return this;
   }
 
+  public ItemData withAllPhones(String allPhones) {
+    this.allPhones = allPhones;
+    return this;
+  }
+
   public ItemData withGroup(String group) {
     this.group = group;
     return this;
@@ -66,6 +72,8 @@ public class ItemData {
 
   public String getWork() {return work;}
 
+  public String getAllPhones() {return allPhones;}
+
   public String getGroup() {return group;}
 
   public int getId() {return id;}
@@ -83,5 +91,6 @@ public class ItemData {
   public int hashCode() {
     return Objects.hash(id, lastname);
   }
+
 
 }
