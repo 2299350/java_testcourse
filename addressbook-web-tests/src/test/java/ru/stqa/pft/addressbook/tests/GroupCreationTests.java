@@ -17,9 +17,23 @@ public class GroupCreationTests extends TestBase{
     app.group().create(group);
     Groups after = app.group().all();
 
-    assertThat(after.size(), equalTo(before.size() + 1));
+    assertThat(app.group().count(), equalTo(before.size() + 1));
 
     assertThat(after, equalTo(
             before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+  }
+
+  @Test
+  public void testBadGroupCreation() throws Exception {
+    GroupData group = new GroupData().withName("Forbidden symbol:'");
+
+    app.goTo().groupPage();
+    Groups before = app.group().all();
+    app.group().create(group);
+
+    assertThat(app.group().count(), equalTo(before.size()));
+
+    Groups after = app.group().all();
+    assertThat(after, equalTo(before));
   }
 }

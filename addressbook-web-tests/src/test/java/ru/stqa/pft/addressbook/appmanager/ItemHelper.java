@@ -40,7 +40,7 @@ public class ItemHelper extends HelperBase {
       type(By.name("byear"), "1990");
       Assert.assertFalse(isElementPresent(By.name("new_group")));
     } else {
-      fillSelector("new_group","Edited group");
+      fillSelector("new_group","CreationName");
     }
   }
 

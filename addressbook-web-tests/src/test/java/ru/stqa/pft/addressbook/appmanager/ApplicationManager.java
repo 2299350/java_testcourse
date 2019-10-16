@@ -60,9 +60,4 @@ public class ApplicationManager {
 
     return navigationHelper;
   }
-
-  public void gotoGroupsPage() {
-
-    navigationHelper.gotoThePage("http://localhost:8080/group.php");
-  }
 }
