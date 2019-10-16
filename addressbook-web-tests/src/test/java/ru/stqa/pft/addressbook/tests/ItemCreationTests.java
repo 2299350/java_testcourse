@@ -16,7 +16,7 @@ public class ItemCreationTests extends TestBase{
 
     ItemData item = new ItemData()
             .withFName("FName3").withMName("MName3").withLName("LName3")
-            .withHome("+79203696563").withMobile("+79203696563").withGroup("Group#1");
+            .withHome("+7(920)3696563").withMobile("+7-920-369-65-65").withWork("+7 920 369 65 67").withGroup("Group#1");
 
     app.item().create(item);
 
