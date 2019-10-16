@@ -78,6 +78,7 @@ public class ItemHelper extends HelperBase {
     initItemCreation();
     fillItemForm(item, true);
     submitItemCreation();
+    itemCache = null;
     wd.findElement(By.linkText("home page")).click();
   }
 
@@ -85,18 +86,14 @@ public class ItemHelper extends HelperBase {
     initItemModificationById(item.getId());
     fillItemForm(item, false);
     submitItemModification();
+    itemCache = null;
     click(By.linkText("home page"));
-  }
-
-  public void delete(int index) {
-    selectItem(index);
-    deleteSelectedItems();
-    wd.findElement(By.linkText("home")).click();
   }
 
   public void delete(ItemData item) {
     selectItemById(item.getId());
     deleteSelectedItems();
+    itemCache = null;
     wd.findElement(By.linkText("home")).click();
   }
 
@@ -104,9 +101,13 @@ public class ItemHelper extends HelperBase {
     return isElementPresent(By.xpath("(//img[@alt='Edit'])[last()]"));
   }
 
-  public Items all() {
+  private Items itemCache = null;
 
-    Items items = new Items();
+  public Items all() {
+    if (itemCache != null) {
+      return new Items(itemCache); // return a itemCache copy
+    }
+    itemCache = new Items();
     List<WebElement> elements = wd.findElements(By.cssSelector("#maintable tr"));
     elements.remove(0);
 
@@ -118,8 +119,8 @@ public class ItemHelper extends HelperBase {
       int id = Integer. parseInt(link.substring(link.lastIndexOf("=") + 1)); // get id from link
 
       ItemData item = new ItemData().withFName(firstname).withLName(lastname).withId(id);
-      items.add(item);
+      itemCache.add(item);
     }
-    return items;
+    return new Items(itemCache); // return a itemCache copy;
   }
 }
