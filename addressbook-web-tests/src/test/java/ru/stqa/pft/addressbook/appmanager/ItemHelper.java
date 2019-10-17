@@ -34,7 +34,11 @@ public class ItemHelper extends HelperBase {
     type(By.name("lastname"), itemData.getLastname());
     type(By.name("home"), itemData.getHome());
     type(By.name("mobile"), itemData.getMobile());
-    type(By.name("work"), itemData.getWork());
+    type(By.name("work"), itemData.getWork()); //address
+    type(By.name("address"), itemData.getAddress());
+    type(By.name("email"), itemData.getEmail());
+    type(By.name("email2"), itemData.getEmail2());
+    type(By.name("email3"), itemData.getEmail3());
     if (!creation){
       fillSelector("bday","1");
       fillSelector("bmonth","January");
@@ -118,16 +122,19 @@ public class ItemHelper extends HelperBase {
     for (WebElement e : elements) {
       String firstname = e.findElement(By.cssSelector("td:nth-child(3)")).getText();
       String lastname = e.findElement(By.cssSelector("td:nth-child(2)")).getText();
+      String address = e.findElement(By.cssSelector("td:nth-child(4)")).getText();
 
       String allPhones = e.findElement(By.cssSelector("td:nth-child(6)")).getText();
       //String[] phones = allPhones.split("\n");
+      String allEmails = e.findElement(By.cssSelector("td:nth-child(5)")).getText();
 
       String link = e.findElement(By.cssSelector("td:nth-child(8) > a")).getAttribute("href"); // get link
       int id = Integer. parseInt(link.substring(link.lastIndexOf("=") + 1)); // get id from link
 
       ItemData item = new ItemData().withFName(firstname).withLName(lastname).withId(id)
-              .withAllPhones(allPhones);
+              .withAllPhones(allPhones).withAllEmails(allEmails).withAddress(address);
               //.withHome(phones[0]).withMobile(phones[1]).withWork(phones[2]);
+
       itemCache.add(item);
     }
     return new Items(itemCache); // return a itemCache copy;
@@ -140,9 +147,13 @@ public class ItemHelper extends HelperBase {
     String home = wd.findElement(By.name("home")).getAttribute("value");
     String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
     String work = wd.findElement(By.name("work")).getAttribute("value");
+    String address = wd.findElement(By.name("address")).getAttribute("value");
+    String email = wd.findElement(By.name("email")).getAttribute("value");
+    String email2 = wd.findElement(By.name("email2")).getAttribute("value");
+    String email3 = wd.findElement(By.name("email3")).getAttribute("value");
     wd.navigate().back();
     return new ItemData()
-            .withId(item.getId()).withFName(firstname).withLName(lastname).withHome(home).withMobile(mobile).withWork(work);
-
+            .withId(item.getId()).withFName(firstname).withLName(lastname).withHome(home).withMobile(mobile).withWork(work)
+            .withAddress(address).withEmail(email).withEmail2(email2).withEmail3(email3);
   }
 }

@@ -13,6 +13,11 @@ public class ItemData {
   private String work;
   private String allPhones;
   private String group;
+  private String address;
+  private String email;
+  private String email2;
+  private String email3;
+  private String allEmails;
 
 
   public ItemData withFName(String firstname) {
@@ -60,23 +65,45 @@ public class ItemData {
     return this;
   }
 
+  public ItemData withAddress(String address) {
+    this.address = address;
+    return this;
+  }
+
+  public ItemData withEmail(String email) {
+    this.email = email;
+    return this;
+  }
+
+  public ItemData withEmail2(String email2) {
+    this.email2 = email2;
+    return this;
+  }
+
+  public ItemData withEmail3(String email3) {
+    this.email3 = email3;
+    return this;
+  }
+
+  public ItemData withAllEmails(String allEmails) {
+    this.allEmails = allEmails;
+    return this;
+  }
+
   public String getFirstname() {return firstname;}
-
   public String getMiddlename() {return middlename;}
-
   public String getLastname() {return lastname;}
-
   public String getHome() {return home;}
-
   public String getMobile() {return mobile;}
-
   public String getWork() {return work;}
-
   public String getAllPhones() {return allPhones;}
-
+  public String getAllEmails() {return allEmails;}
   public String getGroup() {return group;}
-
   public int getId() {return id;}
+  public String getAddress() {return address;}
+  public String getEmail() {return email;}
+  public String getEmail2() {return email2;}
+  public String getEmail3() {return email3;}
 
   @Override
   public boolean equals(Object o) {
@@ -91,6 +118,4 @@ public class ItemData {
   public int hashCode() {
     return Objects.hash(id, lastname);
   }
-
-
 }
