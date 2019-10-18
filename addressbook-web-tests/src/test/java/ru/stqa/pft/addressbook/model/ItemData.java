@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.model;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ItemData {
@@ -18,7 +19,7 @@ public class ItemData {
   private String email2;
   private String email3;
   private String allEmails;
-
+  private File photo;
 
   public ItemData withFName(String firstname) {
     this.firstname = firstname;
@@ -90,6 +91,11 @@ public class ItemData {
     return this;
   }
 
+  public ItemData withPhoto(File photo) {
+    this.photo = photo;
+    return this;
+  }
+
   public String getFirstname() {return firstname;}
   public String getMiddlename() {return middlename;}
   public String getLastname() {return lastname;}
@@ -104,6 +110,7 @@ public class ItemData {
   public String getEmail() {return email;}
   public String getEmail2() {return email2;}
   public String getEmail3() {return email3;}
+  public File getPhoto() {return photo;}
 
   @Override
   public boolean equals(Object o) {

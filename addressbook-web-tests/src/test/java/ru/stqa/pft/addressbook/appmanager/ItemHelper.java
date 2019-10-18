@@ -8,6 +8,7 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ItemData;
 import ru.stqa.pft.addressbook.model.Items;
 
+import java.io.File;
 import java.util.*;
 
 public class ItemHelper extends HelperBase {
@@ -39,6 +40,7 @@ public class ItemHelper extends HelperBase {
     type(By.name("email"), itemData.getEmail());
     type(By.name("email2"), itemData.getEmail2());
     type(By.name("email3"), itemData.getEmail3());
+    attach(By.name("photo"), itemData.getPhoto());
     if (!creation){
       fillSelector("bday","1");
       fillSelector("bmonth","January");
