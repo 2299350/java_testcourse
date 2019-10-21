@@ -13,4 +13,6 @@ dependencies {
     compile 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-2'
     // https://mvnrepository.com/artifact/org.hamcrest/hamcrest
     testCompile group: 'org.hamcrest', name: 'hamcrest', version: '2.1'
+    // https://mvnrepository.com/artifact/com.beust/jcommander
+    compile group: 'com.beust', name: 'jcommander', version: '1.78'
 }
