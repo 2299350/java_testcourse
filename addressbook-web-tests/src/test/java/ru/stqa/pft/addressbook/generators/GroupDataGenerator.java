@@ -23,6 +23,7 @@ public class GroupDataGenerator {
 
     GroupDataGenerator generator = new GroupDataGenerator();
     JCommander jCommander = new JCommander(generator); // Edit configuration | -c 10 -f src/test/resources/groups.csv
+    // | it means (-c) or count = 10; (-f) or file = "src/test/resources/groups.csv"
     try {
       jCommander.parse(args);
     } catch (ParameterException ex) {
