@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.model;
 
+import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
@@ -7,10 +8,13 @@ import java.util.Objects;
 
 @XStreamAlias("group")
 public class GroupData {
-  @XStreamOmitField
+  @XStreamOmitField // it means to avoid adding this to XML
   private int id = Integer.MAX_VALUE;
+  @Expose // it means add this to JSON
   private String name;
+  @Expose
   private String header;
+  @Expose
   private String footer;
 
   @Override
