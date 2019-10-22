@@ -19,7 +19,12 @@ import java.util.stream.Collectors;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ItemCreationTests extends TestBase{
+public class ItemCreationTests extends TestBase {
+
+  @BeforeMethod
+  public void ensurePreconditions() {
+    app.goTo().gotoHomePage();
+  }
 
   @DataProvider
   public Iterator<Object[]> validItemsFromXml() throws IOException {
@@ -49,12 +54,13 @@ public class ItemCreationTests extends TestBase{
         line = reader.readLine();
       }
       Gson gson = new Gson();
-      List<ItemData> items = gson.fromJson(json, new TypeToken<List<ItemData>>(){}.getType()); // List<GroupData>.class
+      List<ItemData> items = gson.fromJson(json, new TypeToken<List<ItemData>>() {
+      }.getType()); // List<GroupData>.class
       return items.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
     }
   }
 
-  @Test (dataProvider = "validItemsFromJson")
+  @Test(dataProvider = "validItemsFromJson")
   public void testItemCreation(ItemData item) throws Exception {
 
     Items before = app.item().all();
@@ -67,9 +73,9 @@ public class ItemCreationTests extends TestBase{
             before.withAdded(item.withId(after.stream().mapToInt((i) -> i.getId()).max().getAsInt()))));
   }
 
-  @Test (enabled = false)
+  @Test(enabled = false)
   public void testCurrentDir() {
-    File currentDir = new File ("."); // "." means the current directory
+    File currentDir = new File("."); // "." means the current directory
     File photo = new File("src/test/resources/stru.jpg");
     System.out.println(photo.getAbsolutePath());
     System.out.println(photo.exists());
