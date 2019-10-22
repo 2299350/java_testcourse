@@ -23,33 +23,35 @@ public class ItemCreationTests extends TestBase{
 
   @DataProvider
   public Iterator<Object[]> validItemsFromXml() throws IOException {
-    BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/items.xml")));
-    String xml = "";
-    String line = reader.readLine();
+    try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/items.xml")))) {
+      String xml = "";
+      String line = reader.readLine();
 
-    while (line != null) {
-      xml += line;
-      line = reader.readLine();
+      while (line != null) {
+        xml += line;
+        line = reader.readLine();
+      }
+      XStream xStream = new XStream();
+      xStream.processAnnotations(ItemData.class);
+      List<ItemData> items = (List<ItemData>) xStream.fromXML(xml);
+      return items.stream().map((i) -> new Object[]{i}).collect(Collectors.toList()).iterator();
     }
-    XStream xStream = new XStream();
-    xStream.processAnnotations(ItemData.class);
-    List<ItemData> items = (List<ItemData>) xStream.fromXML(xml);
-    return items.stream().map((i) -> new Object[]{i}).collect(Collectors.toList()).iterator();
   }
 
   @DataProvider
   public Iterator<Object[]> validItemsFromJson() throws IOException {
-    BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/items.json")));
-    String json = "";
-    String line = reader.readLine();
+    try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/items.json")))) {
+      String json = "";
+      String line = reader.readLine();
 
-    while (line != null) {
-      json += line;
-      line = reader.readLine();
+      while (line != null) {
+        json += line;
+        line = reader.readLine();
+      }
+      Gson gson = new Gson();
+      List<ItemData> items = gson.fromJson(json, new TypeToken<List<ItemData>>(){}.getType()); // List<GroupData>.class
+      return items.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
     }
-    Gson gson = new Gson();
-    List<ItemData> items = gson.fromJson(json, new TypeToken<List<ItemData>>(){}.getType()); // List<GroupData>.class
-    return items.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
   }
 
   @Test (dataProvider = "validItemsFromJson")

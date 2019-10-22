@@ -68,27 +68,27 @@ public class ItemDataGenerator {
 
   private void saveAsCsv(List<ItemData> items, File file) throws IOException {
     System.out.println(new File(".").getAbsolutePath());
-    Writer writer = new FileWriter(file);
-    for (ItemData item : items) {
-      writer.write(String.format("%s;%s;%s\n", item.getFirstname(), item.getMiddlename(),item.getLastname()));
+    try (Writer writer = new FileWriter(file)) {
+      for (ItemData item : items) {
+        writer.write(String.format("%s;%s;%s\n", item.getFirstname(), item.getMiddlename(),item.getLastname()));
+      }
     }
-    writer.close();
   }
 
   private void saveAsXml(List<ItemData> items, File file) throws IOException {
     XStream xstream = new XStream();
     xstream.processAnnotations(ItemData.class);
     String xml = xstream.toXML(items);
-    Writer writer = new FileWriter(file);
-    writer.write(xml);
-    writer.close();
+    try (Writer writer = new FileWriter(file)) {
+      writer.write(xml);
+    }
   }
 
   private void saveAsJson(List<ItemData> items, File file) throws IOException {
     Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
     String json = gson.toJson(items);
-    Writer writer = new FileWriter(file);
-    writer.write(json);
-    writer.close();
+    try (Writer writer = new FileWriter(file)) {
+      writer.write(json);
+    }
   }
 }
