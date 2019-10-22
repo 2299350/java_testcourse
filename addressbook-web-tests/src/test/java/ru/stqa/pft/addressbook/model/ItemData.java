@@ -1,13 +1,22 @@
 package ru.stqa.pft.addressbook.model;
 
+import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 import java.io.File;
 import java.util.Objects;
 
+@XStreamAlias("item")
 public class ItemData {
 
+  @XStreamOmitField // it means to avoid adding this to XML
   private int id = Integer.MAX_VALUE; //?
+  @Expose // it means add this to JSON
   private String firstname;
+  @Expose
   private String middlename;
+  @Expose
   private String lastname;
   private String home;
   private String mobile;
