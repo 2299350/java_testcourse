@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="Items">
+        <classes>
+            <class name="ru.stqa.pft.addressbook.tests.ItemCreationTests" />
+            <class name="ru.stqa.pft.addressbook.tests.ItemModificationTests" />
+            <class name="ru.stqa.pft.addressbook.tests.ItemDeletionTests" />
+        </classes>
+    </test>
+</suite>

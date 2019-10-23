@@ -8,12 +8,4 @@
             <class name="ru.stqa.pft.addressbook.tests.GroupDeletionTests" />
         </classes>
     </test>
-
-    <test name="Items">
-        <classes>
-            <class name="ru.stqa.pft.addressbook.tests.ItemCreationTests" />
-            <class name="ru.stqa.pft.addressbook.tests.ItemModificationTests" />
-            <class name="ru.stqa.pft.addressbook.tests.ItemDeletionTests" />
-        </classes>
-    </test>
 </suite>
