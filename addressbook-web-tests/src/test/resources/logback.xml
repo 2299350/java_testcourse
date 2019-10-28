@@ -14,7 +14,16 @@
         </encoder>
     </appender>
 
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter"></filter>
+            <level>INFO</level>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} {%tread} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
     <root level="DEBUG">
         <appender-ref ref="FILE" />
+        <!--<appender-ref ref="STDOUT" />-->
     </root>
 </configuration>

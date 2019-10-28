@@ -3,18 +3,29 @@ package ru.stqa.pft.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.util.Objects;
 
 @XStreamAlias("group")
+@Entity // for hibernate
+@Table (name = "group_list") // Shows hibernate the name of the table
 public class GroupData {
+  @Id
+  @Column (name = "group_id") // Shows hibernate the name in DB
   @XStreamOmitField // it means to avoid adding this to XML
   private int id = Integer.MAX_VALUE;
   @Expose // it means add this to JSON
+  @Column (name = "group_name") // Shows hibernate the name in DB
   private String name;
   @Expose
+  @Column (name = "group_header") // Shows hibernate the name in DB
+  @Type(type = "text") // Shows hibernate the type of the field
   private String header;
   @Expose
+  @Column (name = "group_footer") // Shows hibernate the name in DB
+  @Type(type = "text") // Shows hibernate the type of the field
   private String footer;
 
   @Override
