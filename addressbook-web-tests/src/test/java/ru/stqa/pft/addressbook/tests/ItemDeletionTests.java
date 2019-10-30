@@ -19,12 +19,12 @@ public class ItemDeletionTests extends TestBase{
   @Test
   public void testItemDeletion() throws Exception {
 
-    Items before = app.item().all();
+    Items before = app.db().items();
     ItemData deletedItem = before.iterator().next();
 
     app.item().delete(deletedItem);
 
-    Items after = app.item().all();
+    Items after = app.db().items();
 
     assertThat(after, equalTo(before.without(deletedItem)));
   }

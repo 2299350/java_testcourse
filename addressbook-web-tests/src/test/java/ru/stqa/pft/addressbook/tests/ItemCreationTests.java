@@ -13,7 +13,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -63,11 +62,11 @@ public class ItemCreationTests extends TestBase {
   @Test(dataProvider = "validItemsFromJson")
   public void testItemCreation(ItemData item) throws Exception {
 
-    Items before = app.item().all();
+    Items before = app.db().items();
     //File photo = new File("src/test/resources/stru.jpg");
     app.item().create(item);
 
-    Set<ItemData> after = app.item().all();
+    Items after = app.db().items();
 
     assertThat(after, equalTo(
             before.withAdded(item.withId(after.stream().mapToInt((i) -> i.getId()).max().getAsInt()))));

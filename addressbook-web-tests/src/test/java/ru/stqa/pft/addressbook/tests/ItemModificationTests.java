@@ -19,14 +19,14 @@ public class ItemModificationTests extends TestBase{
   @Test
   public void testItemModification() throws Exception {
 
-    Items before = app.item().all();
+    Items before = app.db().items();
     ItemData modifiedItem = before.iterator().next();
 
-    ItemData item = new ItemData().withFName("FName").withMName("MName").withLName("Edited").withId(modifiedItem.getId());
+    ItemData item = new ItemData().withFName("Modified").withMName("MName").withLName("Edited").withId(modifiedItem.getId());
 
     app.item().modify(item);
 
-    Items after = app.item().all();
+    Items after = app.db().items();
 
     assertThat(after, equalTo(before.without(modifiedItem).withAdded(item)));
   }

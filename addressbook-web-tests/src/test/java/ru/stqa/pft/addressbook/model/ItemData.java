@@ -54,15 +54,6 @@ public class ItemData {
   @Type(type = "text")
   private String photo;
 
-  @Override
-  public String toString() {
-    return "ItemData{" +
-            "id=" + id +
-            ", firstname='" + firstname + '\'' +
-            ", lastname='" + lastname + '\'' +
-            '}';
-  }
-
   public ItemData withFName(String firstname) {
     this.firstname = firstname;
     return this;
@@ -152,7 +143,12 @@ public class ItemData {
   public String getEmail() {return email;}
   public String getEmail2() {return email2;}
   public String getEmail3() {return email3;}
-  public File getPhoto() {return new File(photo);}
+  public File getPhoto() {
+    if (photo == null) {
+      return null;
+    }
+    return new File(photo);
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -160,11 +156,21 @@ public class ItemData {
     if (o == null || getClass() != o.getClass()) return false;
     ItemData itemData = (ItemData) o;
     return id == itemData.id &&
+            Objects.equals(firstname, itemData.firstname) &&
             Objects.equals(lastname, itemData.lastname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, lastname);
+    return Objects.hash(id, firstname, lastname);
+  }
+
+  @Override
+  public String toString() {
+    return "ItemData{" +
+            "id=" + id +
+            ", firstname='" + firstname + '\'' +
+            ", lastname='" + lastname + '\'' +
+            '}';
   }
 }

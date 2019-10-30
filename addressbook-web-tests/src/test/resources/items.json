@@ -7,6 +7,7 @@
   {
     "firstname": "firstName 1",
     "middlename": "middleName 1",
-    "lastname": "lastName 1"
+    "lastname": "lastName 1",
+    "photo": "src/test/resources/stru.jpg"
   }
 ]
