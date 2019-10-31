@@ -7,7 +7,9 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity // for hibernate
 @Table(name = "addressbook") // Shows hibernate the name of the table
@@ -39,8 +41,6 @@ public class ItemData {
   @Transient // it means skip it for hibernate
   private String allPhones;
   @Transient
-  private String group;
-  @Transient
   private String address;
   @Transient
   private String email;
@@ -53,6 +53,10 @@ public class ItemData {
   @Column (name = "photo")
   @Type(type = "text")
   private String photo;
+  @ManyToMany(fetch = FetchType.EAGER) // annotation for hibernate
+  @JoinTable (name = "address_in_groups",
+          joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+  private Set<GroupData> groups = new HashSet<GroupData>();
 
   public ItemData withFName(String firstname) {
     this.firstname = firstname;
@@ -86,11 +90,6 @@ public class ItemData {
 
   public ItemData withAllPhones(String allPhones) {
     this.allPhones = allPhones;
-    return this;
-  }
-
-  public ItemData withGroup(String group) {
-    this.group = group;
     return this;
   }
 
@@ -137,7 +136,7 @@ public class ItemData {
   public String getWork() {return work;}
   public String getAllPhones() {return allPhones;}
   public String getAllEmails() {return allEmails;}
-  public String getGroup() {return group;}
+  public Groups getGroups() {return new Groups(groups);}
   public int getId() {return id;}
   public String getAddress() {return address;}
   public String getEmail() {return email;}
@@ -172,5 +171,10 @@ public class ItemData {
             ", firstname='" + firstname + '\'' +
             ", lastname='" + lastname + '\'' +
             '}';
+  }
+
+  public ItemData inGroup(GroupData group) {
+    groups.add(group);
+    return this;
   }
 }

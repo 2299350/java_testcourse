@@ -44,6 +44,7 @@ public class HbConnectionTest {
 
     for (ItemData item : result) {
       System.out.println(item);
+      System.out.println(item.getGroups());
     }
 
     session.getTransaction().commit();

@@ -6,7 +6,9 @@ import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @XStreamAlias("group")
 @Entity // for hibernate
@@ -27,6 +29,9 @@ public class GroupData {
   @Column (name = "group_footer") // Shows hibernate the name in DB
   @Type(type = "text") // Shows hibernate the type of the field
   private String footer;
+
+  @ManyToMany(mappedBy = "groups") // It means see connections in ItemData > groups
+  private Set<ItemData> items = new HashSet<ItemData>();
 
   @Override
   public String toString() {
@@ -67,6 +72,7 @@ public class GroupData {
   public String getFooter() {
     return footer;
   }
+  public Items getItems() {return new Items((Items) items);}
 
   @Override
   public boolean equals(Object o) {
