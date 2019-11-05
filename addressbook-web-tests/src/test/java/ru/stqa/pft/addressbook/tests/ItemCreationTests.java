@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.thoughtworks.xstream.XStream;
 import org.testng.annotations.*;
+import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 import ru.stqa.pft.addressbook.model.ItemData;
 import ru.stqa.pft.addressbook.model.Items;
@@ -67,7 +68,8 @@ public class ItemCreationTests extends TestBase {
 
     Items before = app.db().items();
     File photo = new File("src/test/resources/stru.jpg");
-    app.item().create(item.withPhoto(photo).inGroup(groups.iterator().next()));
+    GroupData next = groups.iterator().next();
+    app.item().create(item.withPhoto(photo).inGroup(next));
 
     Items after = app.db().items();
 
