@@ -10,7 +10,7 @@ public class ItemDeletionTests extends TestBase{
 
   @BeforeMethod
   public void ensurePreconditions() {
-    if (app.db().groups().size() == 0) {
+    if (app.db().items().size() == 0) {
       app.item().create(new ItemData().withFName("FName").withMName("MName").withLName("Absence"));
       app.goTo().gotoHomePage();
     }

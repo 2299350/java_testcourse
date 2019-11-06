@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
+
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -34,6 +36,7 @@ public class GroupHelper extends HelperBase {
   }
 
   public void initGroupCreation() {
+    wd.get("http://localhost:8080/group.php");
     click(By.name("new"));
   }
 
@@ -100,5 +103,15 @@ public class GroupHelper extends HelperBase {
     }
 
     return new Groups(groupCache); // return a groupCache copy
+  }
+
+  public ArrayList<String> allGroupNames() {
+    List<WebElement> elements = wd.findElements(By.cssSelector("select[name='to_group'] option"));
+    ArrayList<String> groupNames = new ArrayList<>();
+
+    for (WebElement e : elements) {
+      groupNames.add(e.getText());
+    }
+    return groupNames;
   }
 }

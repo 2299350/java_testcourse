@@ -7,8 +7,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ItemData;
 import ru.stqa.pft.addressbook.model.Items;
-
-import java.io.File;
 import java.util.*;
 
 public class ItemHelper extends HelperBase {
@@ -35,7 +33,7 @@ public class ItemHelper extends HelperBase {
     type(By.name("lastname"), itemData.getLastname());
     type(By.name("home"), itemData.getHome());
     type(By.name("mobile"), itemData.getMobile());
-    type(By.name("work"), itemData.getWork()); //address
+    type(By.name("work"), itemData.getWork());
     type(By.name("address"), itemData.getAddress());
     type(By.name("email"), itemData.getEmail());
     type(By.name("email2"), itemData.getEmail2());
@@ -47,14 +45,25 @@ public class ItemHelper extends HelperBase {
       type(By.name("byear"), "1990");
       Assert.assertFalse(isElementPresent(By.name("new_group")));
     } else {
-      fillSelector("new_group","CreationName");
+      fillSelector("new_group","Default");
     }
+  }
+
+  public void addItemToGroup(ItemData item, String groupName) {
+    wd.findElement(By.id(Integer.toString(item.getId()))).click();
+
+    wd.findElement(By.name("to_group")).click();
+    new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(groupName);
+    wd.findElement(By.name("to_group")).click();
+    wd.findElement(By.name("add")).click();
+
+    wd.get("http://localhost:8080");
   }
 
   private void fillSelector(String sName, String value) {
 
     wd.findElement(By.name(sName)).click();
-    new Select(wd.findElement(By.name(sName))).selectByVisibleText(value);
+    new Select(wd.findElement(By.name(sName))).selectByVisibleText("[none]");
     wd.findElement(By.name(sName)).click();
   }
 
