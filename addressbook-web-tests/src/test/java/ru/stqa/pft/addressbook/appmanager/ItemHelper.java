@@ -5,8 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 import ru.stqa.pft.addressbook.model.ItemData;
 import ru.stqa.pft.addressbook.model.Items;
+
+import java.sql.*;
 import java.util.*;
 
 public class ItemHelper extends HelperBase {
@@ -50,14 +54,23 @@ public class ItemHelper extends HelperBase {
   }
 
   public void addItemToGroup(ItemData item, String groupName) {
+    wd.get("http://localhost:8080");
     wd.findElement(By.id(Integer.toString(item.getId()))).click();
-
     wd.findElement(By.name("to_group")).click();
     new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(groupName);
     wd.findElement(By.name("to_group")).click();
     wd.findElement(By.name("add")).click();
-
     wd.get("http://localhost:8080");
+  }
+
+  public void removeItemFromGroup(ItemData item, String groupName) {
+
+    wd.get("http://localhost:8080/");
+    wd.findElement(By.name("group")).click();
+    new Select(wd.findElement(By.name("group"))).selectByVisibleText(groupName);
+    wd.findElement(By.name("group")).click();
+    wd.findElement(By.id(Integer.toString(item.getId()))).click();
+    wd.findElement(By.name("remove")).click();
   }
 
   private void fillSelector(String sName, String value) {
@@ -91,6 +104,42 @@ public class ItemHelper extends HelperBase {
   public void initItemCreation() {
 
     click(By.linkText("add new"));
+  }
+
+  public Groups getAllGroupsOfItemFromDB(int id) {
+
+    Groups allGroupsOfItem = new Groups();
+    Connection conn = null;
+    try {
+      conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/addressbook?user=root&password=&serverTimezone=UTC");
+      PreparedStatement st = conn.prepareStatement("SELECT group_list.group_name, group_list.group_id, group_list.group_header, group_list.group_footer " +
+              "FROM group_list " +
+              "LEFT JOIN address_in_groups " +
+              "ON group_list.group_id = address_in_groups.group_id " +
+              "LEFT JOIN addressbook " +
+              "ON address_in_groups.id = addressbook.id " +
+              "WHERE addressbook.id = ? AND group_list.deprecated = '0000-00-00';");
+      st.setInt(1, id);
+      ResultSet rs = st.executeQuery();
+
+      while (rs.next()) {
+        allGroupsOfItem.add(new GroupData().withId(rs.getInt("group_id"))
+                .withName(rs.getString("group_name")).withHeader(rs.getString("group_header")).withFooter(rs.getString("group_footer")));
+      }
+
+      rs.close(); //ResultSet
+      st.close(); // Statement
+      conn.close(); // Connection
+
+      System.out.println(allGroupsOfItem);
+
+    } catch (SQLException ex) {
+      // handle any errors
+      System.out.println("SQLException: " + ex.getMessage());
+      System.out.println("SQLState: " + ex.getSQLState());
+      System.out.println("VendorError: " + ex.getErrorCode());
+    }
+    return allGroupsOfItem;
   }
 
   public void create(ItemData item) {

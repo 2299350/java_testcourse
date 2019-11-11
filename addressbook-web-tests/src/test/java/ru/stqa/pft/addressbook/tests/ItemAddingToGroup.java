@@ -33,11 +33,8 @@ public class ItemAddingToGroup extends TestBase {
     ItemData anyItem = before.iterator().next();
 
     int itemId = anyItem.getId();
-    System.out.println(itemId);
 
     ArrayList<String> groupNames = app.group().allGroupNames();
-    System.out.println(groupNames.toString());
-    System.out.println(groupNames.get(0));
 
     for (int i = 0; i < 2; i++) {
       app.item().addItemToGroup(anyItem, groupNames.get(i));
