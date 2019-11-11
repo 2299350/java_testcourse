@@ -8,6 +8,7 @@ import ru.stqa.pft.addressbook.model.Items;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.greaterThan;
 
 
 public class ItemRemovingFromAllGroupsDb extends TestBase {
@@ -24,24 +25,26 @@ public class ItemRemovingFromAllGroupsDb extends TestBase {
       Groups allGroups = app.db().groups();
       if (allGroups.size() == 0) {
         group = new GroupData().withName("Group for Item Removing");
+        app.group().create(group);
       } else {
         group = allGroups.iterator().next();
       }
 
-      app.group().create(group);
-
       app.item().addItemToGroup(anyItem, group.getName());
+      Groups itemGroupsAdded = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
+
+      assertThat(itemGroupsAdded.size(), greaterThan(0));
     }
+
+    itemGroups = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
 
     for (GroupData g : itemGroups) {
       app.item().removeItemFromGroup(anyItem, g.getName());
     }
-    //Items after = app.db().items();
-    //assertThat(after, equalTo(before));
+
+    Groups itemGroupsAfter = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
+    assertThat(itemGroupsAfter.size(), equalTo(0));
   }
-
-
-
 }
 
 
