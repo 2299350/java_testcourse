@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
@@ -11,10 +12,18 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.greaterThan;
 
 
-public class ItemRemovingFromAllGroupsDb extends TestBase {
+public class ItemRemovingFromOneGroupDb extends TestBase {
+
+  @BeforeMethod
+  public void ensurePreconditions() {
+    if (app.db().items().size() == 0) {
+      app.item().create(new ItemData().withFName("FName").withMName("MName").withLName("Absence"));
+    }
+    app.goTo().gotoHomePage();
+  }
 
   @Test
-  public void testItemRemovingFromAllGroups() throws Exception {
+  public void testItemRemovingFromOneGroup() throws Exception {
 
     Items before = app.item().all();
     ItemData anyItem = before.iterator().next();
@@ -37,13 +46,14 @@ public class ItemRemovingFromAllGroupsDb extends TestBase {
     }
 
     itemGroups = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
+    int groupsNumBefore = itemGroups.size();
 
-    for (GroupData g : itemGroups) {
-      app.item().removeItemFromGroup(anyItem, g.getName());
-    }
+    app.item().removeItemFromGroup(anyItem, itemGroups.iterator().next().getName());
 
     Groups itemGroupsAfter = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
-    assertThat(itemGroupsAfter.size(), equalTo(0));
+    int groupsNumAfter = itemGroupsAfter.size();
+
+    assertThat(groupsNumAfter, equalTo(groupsNumBefore - 1));
   }
 }
 

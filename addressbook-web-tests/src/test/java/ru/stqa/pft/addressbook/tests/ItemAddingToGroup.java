@@ -15,10 +15,8 @@ public class ItemAddingToGroup extends TestBase {
 
   @BeforeMethod
   public void ensurePreconditions() {
-    if (app.db().groups().size() < 2) {
-      for (int i = 0; app.db().groups().size() < 2; i++) {
-        app.group().create(new GroupData().withName("The group #" + i));
-      }
+    if (app.db().groups().size() == 0) {
+        app.group().create(new GroupData().withName("The group"));
     }
 
     if (app.db().items().size() == 0) {
@@ -41,14 +39,14 @@ public class ItemAddingToGroup extends TestBase {
     Groups itemGroupsBefore = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
     assertThat(itemGroupsBefore.size(), equalTo(0));
 
-    //Adding the item to 2 groups
-    ArrayList<String> groupNames = app.group().allGroupNames();
-    for (int i = 0; i < 2; i++) {
-      app.item().addItemToGroup(anyItem, groupNames.get(i));
-      System.out.println("User " + anyItem.getLastname() + " ,id = " + anyItem.getId() + " has been added to the " + groupNames.get(i) + ".");
-    }
+    //Adding the item to any group
+    String groupName = app.group().anyGroupName();
+
+    app.item().addItemToGroup(anyItem, groupName);
+    System.out.println("User " + anyItem.getLastname() + " ,id = " + anyItem.getId() + " has been added to the " + groupName + ".");
+
 
     Groups itemGroupsAfter = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
-    assertThat(itemGroupsAfter.size(), equalTo(2));
+    assertThat(itemGroupsAfter.size(), equalTo(1));
   }
 }

@@ -23,5 +23,7 @@ dependencies {
     compile 'org.testng:testng:7.0.0'
     compile 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-2'
     // https://mvnrepository.com/artifact/org.hamcrest/hamcrest
-    testCompile group: 'org.hamcrest', name: 'hamcrest', version: '2.1'    
+    testCompile group: 'org.hamcrest', name: 'hamcrest', version: '2.1'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.1'
 }

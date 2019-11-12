@@ -114,4 +114,10 @@ public class GroupHelper extends HelperBase {
     }
     return groupNames;
   }
+
+  public String anyGroupName() {
+    wd.get("http://localhost:8080/");
+    WebElement element = wd.findElement(By.cssSelector("select[name='to_group'] option"));
+    return element.getText();
+  }
 }
