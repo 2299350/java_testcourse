@@ -47,15 +47,17 @@ public class ApplicationManager {
     wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
     wd.get(properties.getProperty("web.baseUrl"));
 
-    groupHelper = new GroupHelper(wd);
-    navigationHelper = new NavigationHelper(wd);
-    sessionHelper = new SessionHelper(wd);
-    itemHelper = new ItemHelper(wd);
+    groupHelper = new GroupHelper(this);
+    navigationHelper = new NavigationHelper(this);
+    sessionHelper = new SessionHelper(this);
+    itemHelper = new ItemHelper(this);
+
 
     sessionHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
   }
 
   public void stop() {
+
     sessionHelper.logout();
     wd.quit();
   }
@@ -78,5 +80,10 @@ public class ApplicationManager {
   public DbHelper db() {
 
     return dbHelper;
+  }
+
+  public String getProperty(String key) {
+
+    return properties.getProperty(key);
   }
 }

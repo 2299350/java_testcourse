@@ -6,14 +6,17 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 import java.io.File;
+import java.util.Properties;
 
 
 public class HelperBase {
 
   protected WebDriver wd;
+  protected ApplicationManager app;
 
-  public HelperBase(WebDriver wd) {
-    this.wd = wd;
+  public HelperBase(ApplicationManager app) {
+    this.wd = app.wd;
+    this.app = app;
   }
 
   protected void click(By locator) {

@@ -6,10 +6,9 @@ import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 import ru.stqa.pft.addressbook.model.ItemData;
 import ru.stqa.pft.addressbook.model.Items;
-
-import java.util.ArrayList;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertTrue;
 
 public class ItemAddingToGroup extends TestBase {
 
@@ -40,13 +39,15 @@ public class ItemAddingToGroup extends TestBase {
     assertThat(itemGroupsBefore.size(), equalTo(0));
 
     //Adding the item to any group
-    String groupName = app.group().anyGroupName();
+    String groupId = app.group().anyGroupId();
 
-    app.item().addItemToGroup(anyItem, groupName);
-    System.out.println("User " + anyItem.getLastname() + " ,id = " + anyItem.getId() + " has been added to the " + groupName + ".");
+    app.item().addItemToGroup(anyItem, groupId);
+    System.out.println("User " + anyItem.getLastname() + " ,id = " + anyItem.getId() + " has been added to the " + groupId + ".");
 
+    assertTrue(app.item().isItemBelongToGroup(anyItem, Integer.parseInt(groupId)));
 
     Groups itemGroupsAfter = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
     assertThat(itemGroupsAfter.size(), equalTo(1));
+    assertThat(Integer.parseInt(groupId), equalTo(itemGroupsAfter.stream().map((g) -> g.getId()).findFirst().get()));
   }
 }

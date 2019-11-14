@@ -1,7 +1,6 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -15,9 +14,8 @@ import java.util.*;
 
 public class ItemHelper extends HelperBase {
 
-  public ItemHelper(WebDriver wd) {
-
-    super(wd);
+  public ItemHelper(ApplicationManager app) {
+    super(app);
   }
 
   public void submitItemCreation() {
@@ -53,24 +51,37 @@ public class ItemHelper extends HelperBase {
     }
   }
 
-  public void addItemToGroup(ItemData item, String groupName) {
-    wd.get("http://localhost:8080");
+  public void addItemToGroup(ItemData item, String groupId) {
+
+    wd.get(app.getProperty("web.baseUrl"));
     wd.findElement(By.id(Integer.toString(item.getId()))).click();
     wd.findElement(By.name("to_group")).click();
-    new Select(wd.findElement(By.name("to_group"))).selectByVisibleText(groupName);
+    new Select(wd.findElement(By.name("to_group"))).selectByValue(groupId);
     wd.findElement(By.name("to_group")).click();
     wd.findElement(By.name("add")).click();
-    wd.get("http://localhost:8080");
+    wd.get(app.getProperty("web.baseUrl"));
   }
 
   public void removeItemFromGroup(ItemData item, String groupName) {
 
-    wd.get("http://localhost:8080/");
+    wd.get(app.getProperty("web.baseUrl"));
     wd.findElement(By.name("group")).click();
     new Select(wd.findElement(By.name("group"))).selectByVisibleText(groupName);
     wd.findElement(By.name("group")).click();
     wd.findElement(By.id(Integer.toString(item.getId()))).click();
     wd.findElement(By.name("remove")).click();
+  }
+
+  public boolean isItemBelongToGroup (ItemData item, int groupId) {
+
+    Groups allGroupsOfItem = app.item().getAllGroupsOfItemFromDB(item.getId());
+    int matches = 0;
+    for (GroupData g : allGroupsOfItem) {
+      if (g.getId() == groupId) {
+        matches++;
+      }
+    }
+    return (matches > 0);
   }
 
   private void fillSelector(String sName, String value) {

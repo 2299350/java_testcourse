@@ -6,7 +6,7 @@ import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 import ru.stqa.pft.addressbook.model.ItemData;
 import ru.stqa.pft.addressbook.model.Items;
-
+import static org.testng.Assert.assertFalse;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.greaterThan;
@@ -47,13 +47,15 @@ public class ItemRemovingFromOneGroupDb extends TestBase {
 
     itemGroups = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
     int groupsNumBefore = itemGroups.size();
+    GroupData delGroup = itemGroups.iterator().next();
 
-    app.item().removeItemFromGroup(anyItem, itemGroups.iterator().next().getName());
+    app.item().removeItemFromGroup(anyItem, delGroup.getName());
 
     Groups itemGroupsAfter = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
     int groupsNumAfter = itemGroupsAfter.size();
 
     assertThat(groupsNumAfter, equalTo(groupsNumBefore - 1));
+    assertFalse(app.item().isItemBelongToGroup(anyItem, delGroup.getId()));
   }
 }
 

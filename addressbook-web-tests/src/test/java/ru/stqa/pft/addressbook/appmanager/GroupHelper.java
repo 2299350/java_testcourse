@@ -12,8 +12,9 @@ import java.util.List;
 
 public class GroupHelper extends HelperBase {
 
-  public GroupHelper(WebDriver wd) {
-    super(wd);
+
+  public GroupHelper(ApplicationManager app) {
+    super(app);
   }
 
   public void returnToGroupPage() {
@@ -36,7 +37,7 @@ public class GroupHelper extends HelperBase {
   }
 
   public void initGroupCreation() {
-    wd.get("http://localhost:8080/group.php");
+    wd.get(app.getProperty("web.baseUrl") + "group.php");
     click(By.name("new"));
   }
 
@@ -115,9 +116,9 @@ public class GroupHelper extends HelperBase {
     return groupNames;
   }
 
-  public String anyGroupName() {
-    wd.get("http://localhost:8080/");
+  public String anyGroupId() {
+    wd.get(app.getProperty("web.baseUrl"));
     WebElement element = wd.findElement(By.cssSelector("select[name='to_group'] option"));
-    return element.getText();
+    return element.getAttribute("value");
   }
 }
