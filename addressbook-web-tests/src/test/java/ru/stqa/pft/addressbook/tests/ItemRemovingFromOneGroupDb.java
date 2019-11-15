@@ -39,7 +39,7 @@ public class ItemRemovingFromOneGroupDb extends TestBase {
         group = allGroups.iterator().next();
       }
 
-      app.item().addItemToGroup(anyItem, group.getName());
+      app.item().addItemToGroup(anyItem, String.valueOf (group.getId()));
       Groups itemGroupsAdded = app.item().getAllGroupsOfItemFromDB(anyItem.getId());
 
       assertThat(itemGroupsAdded.size(), greaterThan(0));
