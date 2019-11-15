@@ -20,7 +20,7 @@ public class HelperBase {
 
   protected void click(By locator) {
     try {
-      wd.findElement(locator).click();
+      app.getDriver().findElement(locator).click();
     } catch (NoSuchElementException ex) {
       System.out.println("There isn't such an element on the page | HelperBase");
     }
@@ -29,24 +29,24 @@ public class HelperBase {
   protected void type(By locator, String text) {
     click(locator);
     if (text != null) {
-      String existingText = wd.findElement(locator).getAttribute("value");
+      String existingText = app.getDriver().findElement(locator).getAttribute("value");
       if (!text.equals(existingText)) {
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
+        app.getDriver().findElement(locator).clear();
+        app.getDriver().findElement(locator).sendKeys(text);
       }
     }
   }
 
   protected void attach(By locator, File file) {
     if (file != null) {
-      wd.findElement(locator).sendKeys(file.getAbsolutePath());
+      app.getDriver().findElement(locator).sendKeys(file.getAbsolutePath());
     }
   }
 
   private boolean isAlertPresent() {
 
     try {
-      wd.switchTo().alert();
+      app.getDriver().switchTo().alert();
       return true;
     } catch (NoAlertPresentException e) {
       return false;

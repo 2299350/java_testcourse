@@ -53,7 +53,7 @@ public class ApplicationManager {
     return registrationHelper;
   }
 
-  public WebDriver getDriver() throws IOException {
+  public WebDriver getDriver() {
     if (wd == null) {
       if (browser.equals(BrowserType.FIREFOX)) {
         wd = new FirefoxDriver();

@@ -32,4 +32,6 @@ dependencies {
     testCompile group: 'org.subethamail', name: 'subethasmtp', version: '3.1.7'
     // https://mvnrepository.com/artifact/ru.lanwen.verbalregex/java-verbal-expressions
     compile group: 'ru.lanwen.verbalregex', name: 'java-verbal-expressions', version: '1.6'
+// https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.29'
 }
