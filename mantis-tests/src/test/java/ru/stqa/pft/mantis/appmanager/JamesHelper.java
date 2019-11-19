@@ -18,7 +18,7 @@ public class JamesHelper {
   private TelnetClient telnet;
   private InputStream in;
   private PrintStream out;
-  
+
   private Session mailSession;
   private Store store;
   private String mailserver;
