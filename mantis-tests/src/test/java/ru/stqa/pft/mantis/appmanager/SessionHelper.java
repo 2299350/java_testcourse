@@ -1,7 +1,11 @@
 package ru.stqa.pft.mantis.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SessionHelper extends HelperBase {
   private ApplicationManager app;
@@ -63,5 +67,19 @@ public class SessionHelper extends HelperBase {
       return false;
     }
     return true;
+  }
+
+  public void goToUsersPage() {
+    wd.get(app.getProperty("web.baseUrl") + "/manage_user_page.php");
+  }
+
+  public void goToUserPage() {
+    WebElement table = wd.findElement(By.className("table-responsive"));
+    List<WebElement> tds = table.findElement(By.tagName("tbody")).findElements(By.tagName("a"));
+    tds.get(1).click();
+  }
+
+  public String getUserName() {
+    return wd.findElement(By.id("edit-username")).getAttribute("value");
   }
 }

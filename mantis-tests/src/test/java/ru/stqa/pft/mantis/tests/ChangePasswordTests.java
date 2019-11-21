@@ -24,10 +24,13 @@ public class ChangePasswordTests extends TestBase {
 
   @Test
   public void testChangePassword() throws IOException, MessagingException {
-    userName = "user13";
+    app.session().loginAdminUI(); // Login as an admin
+    app.session().goToUsersPage();
+    app.session().goToUserPage();
+
+    userName = app.session().getUserName();
     newPassword = "newPassword";
 
-    app.session().loginAdminUI(); // Login as an admin
     userEmail = app.session().chooseUserAndGetEmail(userName); // Init password change and get user's email
 
     List<MailMessage> mailMessages = app.mail().waitForMail(1,10000); // Get confirmation link
