@@ -1,7 +1,6 @@
 package ru.stqa.pft.soap;
 
 import com.lavasoft.GeoIPService;
-import com.lavasoft.GetCountryISO2ByName;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
