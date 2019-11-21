@@ -59,6 +59,7 @@ dependencies {
     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.18'
-    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
-    compile 'org.hibernate', name: 'hibernate-core', version: '5.4.7.Final'
+// https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.7.Final'
+
 }
