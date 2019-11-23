@@ -6,10 +6,12 @@ import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 import com.jayway.restassured.RestAssured;
 
+import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Set;
 
 import static org.testng.Assert.assertEquals;
@@ -22,6 +24,11 @@ public class RestAssuredTests {
   }
 
   @Test
+  public void testIfOpenedBugify() {
+    skipIfNotFixedBugify(1);
+  }
+
+  @Test (enabled=false)
   public void testCreateIssue() throws IOException {
 
     Set<Issue> oldIssues = getIssues();
@@ -49,5 +56,27 @@ public class RestAssuredTests {
     JsonElement parsed = new JsonParser().parse(json);
     int issueId = parsed.getAsJsonObject().get("issue_id").getAsInt();
     return issueId;
+  }
+
+  public boolean isIssueOpenedBugify(int issueId) throws IOException {
+    String json = RestAssured.get("https://bugify.stqa.ru/api/issues/"+issueId+".json").asString();
+
+    JsonElement parsed = new JsonParser().parse(json);
+    JsonElement issues = parsed.getAsJsonObject().get("issues");
+    Issue issue = new Gson()
+            .<List<Issue>>fromJson(issues, new TypeToken<List<Issue>>(){}.getType())
+            .get(0);
+    System.out.println(issue.getStateName());
+    return !(issue.getStateName().equals("Resolved") || issue.getStateName().equals("Closed"));
+  }
+
+  public void skipIfNotFixedBugify(int issueId) {
+    try {
+      if (isIssueOpenedBugify(issueId)) {
+        throw new SkipException("Ignored because of issue " + issueId);
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
   }
 }
