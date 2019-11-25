@@ -34,7 +34,7 @@ public class PointDistanceTest {
     Point p2 = new Point(4, 6);
     double result = p1.distance(p2);
 
-    Assert.assertEquals(result, 0.0);
+    Assert.assertEquals(result, 4.031128874149275);
 
   }
 
