@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+test {
+    useTestNG()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.testng:testng:7.0.0'
+    
+    // https://mvnrepository.com/artifact/com.jcabi/jcabi-github
+    compile group: 'com.jcabi', name: 'jcabi-github', version: '0.27'
+}
