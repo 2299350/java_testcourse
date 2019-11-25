@@ -25,7 +25,7 @@ public class GroupModificationTests extends TestBase {
     GroupData modifiedGroup = before.iterator().next(); // random group selection
 
     GroupData group = new GroupData()
-            .withId(modifiedGroup.getId()).withName("Edited group").withHeader("edited header2").withFooter("edited footer2");
+            .withId(modifiedGroup.getId()).withName("Edited group2").withHeader("edited header2").withFooter("edited footer2");
     app.goTo().groupPage();
     app.group().modify(group);
 
