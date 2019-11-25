@@ -2,11 +2,12 @@
   {
     "firstname": "firstName 0",
     "middlename": "middleName 0",
-    "lastname": "lastName 0"
+    "lastname": "With photo"
   },
   {
     "firstname": "firstName 1",
     "middlename": "middleName 1",
-    "lastname": "lastName 1"
+    "lastname": "lastName 1",
+    "photo": "src/test/resources/stru.jpg"
   }
 ]
