@@ -1,0 +1,549 @@
+org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+org.hibernate.Version - HHH000412: Hibernate Core {5.4.7.Final}
+org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+o.h.b.j.i.s.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+o.h.b.j.i.s.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@38f6d12f
+o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@38f6d12f
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@38f6d12f
+o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6837aec9
+o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@ed7c9f6
+o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@7ea1b1b7
+o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@5c6b7f7
+o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@5c6b7f7
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@5c6b7f7
+o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@7c3434d9
+o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@7c3434d9
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7c3434d9
+o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6b7eea9b
+o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6b7eea9b
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6b7eea9b
+o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@6c3d4299
+o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@6c3d4299
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6c3d4299
+o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@296424c1
+o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@296424c1
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@296424c1
+o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5b5733cf
+o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5b5733cf
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5b5733cf
+o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@4fed78d6
+o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@4fed78d6
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4fed78d6
+o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3c9f9045
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3c9f9045
+o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4f1cd888
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4f1cd888
+o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@682d6fda
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@682d6fda
+o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7549a16e
+o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6ab62611
+o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@3496ed5
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3496ed5
+o.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@2c02cde1
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2c02cde1
+o.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@70ebdee5
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@70ebdee5
+o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4833bdf2
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4833bdf2
+o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7712153d
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7712153d
+o.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@591bc016
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@591bc016
+o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6adb992a
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6adb992a
+o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@60ba3528
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@60ba3528
+o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4c74d56f
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4c74d56f
+o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@6fa07150
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@6fa07150
+o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2658a0dc
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2658a0dc
+o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@504f160
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@504f160
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@504f160
+o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@148ecb5a
+o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@361cc6a4
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@361cc6a4
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@361cc6a4
+o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@68e8e825
+o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@5c263696
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5c263696
+o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@58d52130
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@58d52130
+o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@40ed3928
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@40ed3928
+o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@6314e9bc
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6314e9bc
+o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7cf789cb
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7cf789cb
+o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@138c380a
+o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@5af89a66
+o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@5af89a66
+o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@5af89a66
+o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@257569f6
+o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@257569f6
+o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@257569f6
+o.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@23852109
+o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@65ec1cc9
+o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@4700e099
+o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@4700e099
+o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@4700e099
+o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@105c399b
+o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@105c399b
+o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@105c399b
+o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@48832143
+o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@20bada0c
+o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@204eeacc
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@204eeacc
+o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5867f81b
+o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@34d38a8a
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@34d38a8a
+o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@5716ce2e
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5716ce2e
+o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4960752f
+o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@25e905b1
+o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@798bd073
+o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@e06f92f
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@e06f92f
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5b75bf23
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6283fae3
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1b0c2a56
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@10cf5d1f
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@66b57482
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1b9cde55
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@613809ea
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@b758777
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+o.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+o.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook?serverTimezone=UTC]
+o.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {user=root, password=}
+o.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.5.5-10.4.6-MariaDB
+      major : 5
+      minor : 5
+o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.18 (Revision: fef2894d751d47223192b706977b4a5bc41e6be4)
+      major : 8
+      minor : 0
+o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+o.h.e.j.e.s.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3b0f7753] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@60161535]
+org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: ru.stqa.pft.addressbook.model.GroupData
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+o.h.cfg.annotations.EntityBinder - Import with entity name GroupData
+o.h.cfg.annotations.EntityBinder - Bind entity ru.stqa.pft.addressbook.model.GroupData on table group_list
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_id, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.GroupData:id]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+o.h.cfg.annotations.PropertyBinder - Building property id
+org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(group_id)]), id, assigned, , ...)
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_footer, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property footer with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.GroupData:footer]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for footer
+o.h.cfg.annotations.PropertyBinder - Building property footer
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_header, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property header with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.GroupData:header]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for header
+o.h.cfg.annotations.PropertyBinder - Building property header
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=null, insertable=true, updatable=true, unique=false}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=element, insertable=true, updatable=true, unique=false}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=items_KEY, insertable=true, updatable=true, unique=false}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='items_KEY', referencedColumn='null', mappedBy='null'}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='groups'}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='groups'}
+o.h.c.annotations.CollectionBinder - Collection role: ru.stqa.pft.addressbook.model.GroupData.items
+o.h.cfg.annotations.PropertyBinder - Building property items
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_name, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.GroupData:name]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+o.h.cfg.annotations.PropertyBinder - Building property name
+org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: ru.stqa.pft.addressbook.model.ItemData
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+o.h.cfg.annotations.EntityBinder - Import with entity name ItemData
+o.h.cfg.annotations.EntityBinder - Bind entity ru.stqa.pft.addressbook.model.ItemData on table addressbook
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=id, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.ItemData:id]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+o.h.cfg.annotations.PropertyBinder - Building property id
+org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, assigned, , ...)
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=firstname, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstname with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.ItemData:firstname]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for firstname
+o.h.cfg.annotations.PropertyBinder - Building property firstname
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=null, insertable=true, updatable=true, unique=false}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=element, insertable=true, updatable=true, unique=false}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=groups_KEY, insertable=true, updatable=true, unique=false}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='groups_KEY', referencedColumn='null', mappedBy='null'}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='id', referencedColumn='', mappedBy=''}
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='group_id', referencedColumn='', mappedBy=''}
+o.h.c.annotations.CollectionBinder - Collection role: ru.stqa.pft.addressbook.model.ItemData.groups
+o.h.cfg.annotations.PropertyBinder - Building property groups
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=home, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property home with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.ItemData:home]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for home
+o.h.cfg.annotations.PropertyBinder - Building property home
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=lastname, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property lastname with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.ItemData:lastname]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for lastname
+o.h.cfg.annotations.PropertyBinder - Building property lastname
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=middlename, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property middlename with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.ItemData:middlename]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for middlename
+o.h.cfg.annotations.PropertyBinder - Building property middlename
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=mobile, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property mobile with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.ItemData:mobile]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for mobile
+o.h.cfg.annotations.PropertyBinder - Building property mobile
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=photo, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property photo with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.ItemData:photo]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for photo
+o.h.cfg.annotations.PropertyBinder - Building property photo
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=work, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property work with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [ru.stqa.pft.addressbook.model.ItemData:work]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for work
+o.h.cfg.annotations.PropertyBinder - Building property work
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for footer
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for header
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for firstname
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for home
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for lastname
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for middlename
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for mobile
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for photo
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for work
+org.hibernate.mapping.PrimaryKey - Forcing column [group_id] to be non-null as it is part of the primary key for table [group_list]
+org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [addressbook]
+o.h.cfg.CollectionSecondPass - Second pass for collection: ru.stqa.pft.addressbook.model.ItemData.groups
+o.h.c.annotations.CollectionBinder - Binding as ManyToMany: ru.stqa.pft.addressbook.model.ItemData.groups
+org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [address_in_groups]
+org.hibernate.mapping.PrimaryKey - Forcing column [group_id] to be non-null as it is part of the primary key for table [address_in_groups]
+o.h.cfg.CollectionSecondPass - Mapped collection key: id, element: group_id
+o.h.cfg.CollectionSecondPass - Second pass for collection: ru.stqa.pft.addressbook.model.GroupData.items
+o.h.c.annotations.CollectionBinder - Binding as ManyToMany: ru.stqa.pft.addressbook.model.GroupData.items
+o.h.cfg.annotations.TableBinder - Retrieving property ru.stqa.pft.addressbook.model.ItemData.groups
+o.h.cfg.CollectionSecondPass - Mapped collection key: group_id, element: id
+o.h.b.i.InFlightMetadataCollectorImpl - Resolving reference to class: ru.stqa.pft.addressbook.model.GroupData
+o.h.b.i.InFlightMetadataCollectorImpl - Resolving reference to class: ru.stqa.pft.addressbook.model.ItemData
+o.h.b.i.InFlightMetadataCollectorImpl - Resolving reference to class: ru.stqa.pft.addressbook.model.GroupData
+o.h.b.i.InFlightMetadataCollectorImpl - Resolving reference to class: ru.stqa.pft.addressbook.model.ItemData
+o.h.internal.SessionFactoryImpl - Building session factory
+org.hibernate.cfg.Settings - SessionFactory name : null
+org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.Settings - Statistics: disabled
+org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.Settings - Default entity-mode: pojo
+org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+org.hibernate.cfg.Settings - Default batch fetch size: -1
+org.hibernate.cfg.Settings - Maximum outer join fetch depth: 2
+org.hibernate.cfg.Settings - Default null ordering: NONE
+org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+org.hibernate.cfg.Settings - Query language substitutions: {}
+org.hibernate.cfg.Settings - Named query checking : enabled
+org.hibernate.cfg.Settings - Second-level cache: disabled
+org.hibernate.cfg.Settings - Second-level query cache: disabled
+org.hibernate.cfg.Settings - Second-level query cache factory: null
+org.hibernate.cfg.Settings - Second-level cache region prefix: null
+org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+org.hibernate.cfg.Settings - JDBC batch size: 15
+org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+org.hibernate.cfg.Settings - Scrollable result sets: enabled
+org.hibernate.cfg.Settings - Wrap result sets: disabled
+org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.Settings - JDBC result set fetch size: null
+org.hibernate.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+org.hibernate.cfg.Settings - JPA compliance - query : 
+org.hibernate.cfg.Settings - JPA compliance - closed-handling : 
+org.hibernate.cfg.Settings - JPA compliance - lists : 
+org.hibernate.cfg.Settings - JPA compliance - transactions : 
+o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, dialect=org.hibernate.dialect.MySQLDialect, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.MySQLDialect, org.gradle.test.worker=5, java.class.path=C:\FJC\github\java_testcourse\addressbook-web-tests\build\classes\java\test;C:\FJC\github\java_testcourse\addressbook-web-tests\build\resources\test;C:\FJC\github\java_testcourse\addressbook-web-tests\build\classes\java\main;C:\FJC\github\java_testcourse\addressbook-web-tests\build\resources\main;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.testng\testng\7.0.0\14b73f64988eda81a42b4584e9647d48633ef857\testng-7.0.0.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-java\4.0.0-alpha-2\8f2a279fc4fd4f4ced4acf17501817682f8b2cd7\selenium-java-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.beust\jcommander\1.78\a3927de9bd6f351429bcf763712c9890629d8f51\jcommander-1.78.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.thoughtworks.xstream\xstream\1.4.8\520d90f30f36a0d6ba2dc929d980831631ad6a92\xstream-1.4.8.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.6\9180733b7df8542621dc12e21e87557e8c99b8cb\gson-2.8.6.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.3\7c4f3c474fb2c041d8028740440937705ebb473a\logback-classic-1.2.3.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\8.0.18\e088efaa4b568bc7d9f7274b9c5ea1a00da1a45c\mysql-connector-java-8.0.18.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.4.7.Final\1e7c6fd84eaa74c199f983eb81f87957fb2483f6\hibernate-core-5.4.7.Final.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest\2.1\9420ba32c29217b54eebd26ff7f9234d31c3fbb2\hamcrest-2.1.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-chrome-driver\4.0.0-alpha-2\4c31ebe7c5a5f44c7c953ca4b01d47a39db21774\selenium-chrome-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-edgehtml-driver\4.0.0-alpha-2\4163abaf653816090b5c8993777666f6c6bedf72\selenium-edgehtml-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-firefox-xpi-driver\4.0.0-alpha-2\76b1bb75239178b61da7438f097e4903336e06a9\selenium-firefox-xpi-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-ie-driver\4.0.0-alpha-2\f2a227a86096e7cf3f0900af34ea096ebc7f6307\selenium-ie-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-opera-driver\4.0.0-alpha-2\6e7dac7d83c9d98e6e2e832a404e51d30ee5463\selenium-opera-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-safari-driver\4.0.0-alpha-2\e62373c16751f7a899aa2f0c44ef6aeece77a2ec\selenium-safari-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-support\4.0.0-alpha-2\ea2abcfc8e3456514bd2cb15dabcb765e6d72fce\selenium-support-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\xmlpull\xmlpull\1.1.3.1\2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa\xmlpull-1.1.3.1.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\xpp3\xpp3_min\1.1.4c\19d4e90b43059058f6e056f794f0ea4030d60b86\xpp3_min-1.1.4c.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.3\864344400c3d4d92dfeb0a305dc87d953677c03c\logback-core-1.2.3.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.25\da76ca59f6a57ee3102f8f9bd9cee742973efa8a\slf4j-api-1.7.25.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.6.1\d06d46ecfd92ec6d0f3b423b4cd81cb38d8b924\protobuf-java-3.6.1.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.1.0.Final\700aeedc4a2089816621948f0379e17cbd17d5db\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.2.Final\3789d00e859632e6c6206adc0c71625559e6e3b0\jboss-logging-3.3.2.Final.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\javax.persistence\javax.persistence-api\2.2\25665ac8c0b62f50e6488173233239120fc52c96\javax.persistence-api-2.2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.24.0-GA\d7466fc2e3af7c023e95c510f06448ad29b225b3\javassist-3.24.0-GA.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-edge-driver\4.0.0-alpha-2\b1f2bdcb3594973629c8610d61e251b5497f6115\selenium-edge-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-chromium-driver\4.0.0-alpha-2\975438a10af8c75b2ab3894ab70c09c978d307fc\selenium-chromium-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-firefox-driver\4.0.0-alpha-2\9c12025dd09806002fcc3e81198ea868d737cf55\selenium-firefox-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-remote-driver\4.0.0-alpha-2\f99b149f416151e0abf40fe025bc62acedfa6fe0\selenium-remote-driver-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.10.2\7e575b4d8eb3041728fb7dac4fa09bf163c5ee9\byte-buddy-1.10.2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.jboss.spec.javax.transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\a8485cab9484dda36e9a8c319e76b5cc18797b58\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.5.Final\7060f67764565b9ee9d467e3ed0cb8a9c601b23a\jandex-2.0.5.Final.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.4\3d5f48f10bbe4eb7bd862f10c0583be2e0053c6\classmate-1.3.4.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\jaxb-runtime\2.3.1\dd6dda9da676a54c5b36ca2806ff95ee017d8738\jaxb-runtime-2.3.1.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\javax.xml.bind\jaxb-api\2.3.1\8531ad5ac454cc2deb9d4d32c40c4d7451939b5d\jaxb-api-2.3.1.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\javax.activation\javax.activation-api\1.2.0\85262acf3ca9816f9537ca47d5adeabaead7cb16\javax.activation-api-1.2.0.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.dom4j\dom4j\2.1.1\3dce5dbb3571aa820c677fadd8349bfa8f00c199\dom4j-2.1.1.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.glassfish.jaxb\txw2\2.3.1\a09d2c48d3285f206fafbffe0e50619284e92126\txw2-2.3.1.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.sun.istack\istack-commons-runtime\3.0.7\c197c86ceec7318b1284bffb49b54226ca774003\istack-commons-runtime-3.0.7.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.jvnet.staxex\stax-ex\1.8\8cc35f73da321c29973191f2cf143d29d26a1df7\stax-ex-1.8.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.sun.xml.fastinfoset\FastInfoset\1.2.15\bb7b7ec0379982b97c62cd17465cb6d9155f68e8\FastInfoset-1.2.15.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-api\4.0.0-alpha-2\4cdcaf8cde67900072b02eb2fdd9878dc88ad737\selenium-api-4.0.0-alpha-2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-exec\1.3\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\commons-exec-1.3.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\io.opentracing.contrib\opentracing-tracerresolver\0.1.7\2f1b9e8e381ece33df72c0d699b91b405b2839ec\opentracing-tracerresolver-0.1.7.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\27.1-jre\e47b59c893079b87743cdcfb6f17ca95c08c592c\guava-27.1-jre.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.14.0\c3a9efd10f26a802da2c47dbe54a8d4c44a6019f\okhttp-3.14.0.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\io.opentracing\opentracing-util\0.33.0\132630f17e198a1748f23ce33597efdf4a807fb9\opentracing-util-0.33.0.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\io.opentracing\opentracing-noop\0.33.0\74b9950a587f53fbdb48c3f1f84f1ece8c10592\opentracing-noop-0.33.0.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\io.opentracing\opentracing-api\0.33.0\67336cfb9d93779c02e1fda4c87801d352720eda\opentracing-api-0.33.0.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\2.5.2\cea74543d5904a30861a61b4643a5f2bb372efc4\checker-qual-2.5.2.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.2.0\88e3c593e9b3586e1c6177f89267da6fc6986f0c\error_prone_annotations-2.2.0.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.1\ed28ded51a8b1c6b112568def5f4b455e6809019\j2objc-annotations-1.1.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\org.codehaus.mojo\animal-sniffer-annotations\1.17\f97ce6decaea32b36101e37979f8b647f00681fb\animal-sniffer-annotations-1.17.jar;C:\Users\alitsman\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.17.2\78c7820b205002da4d2d137f6f312bd64b3d6049\okio-1.17.2.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, hbm2ddl.auto=validate, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Europe/Moscow, os.name=Windows 10, java.vm.specification.version=1.8, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_191\jre\bin, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 5', sun.cpu.endian=little, user.home=C:\Users\alitsman, user.language=en, java.specification.vendor=Oracle Corporation, hibernate.cache.provider_class=org.hibernate.cache.internal.NoCachingRegionFactory, org.gradle.native=false, java.home=C:\Program Files\Java\jdk1.8.0_191\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, cache.provider_class=org.hibernate.cache.internal.NoCachingRegionFactory, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\classes, hibernate.hbm2ddl.auto=validate, user.script=, connection.password=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_191-b12, user.name=alitsman, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_191\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/addressbook?serverTimezone=UTC, connection.pool_size=1, file.encoding=windows-1251, browser=chrome, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, show_sql=true, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\alitsman\AppData\Local\Temp\, java.version=1.8.0_191, user.dir=C:\FJC\github\java_testcourse\addressbook-web-tests, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, target=remote, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@34a8c164, java.library.path=C:\Program Files\Java\jdk1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\FJC\TestTools;C:\Program Files\Git\cmd;C:\Users\alitsman\AppData\Local\Microsoft\WindowsApps;C:\Users\alitsman\AppData\Local\Programs\Fiddler;C:\Program Files\Java\jdk1.8.0_191\bin;C:\_My_folder\Tools\apache-maven-3.6.0\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\alitsman\AppData\Local\GitHubDesktop\bin;C:\FJC\TestTools\james-binary-2.3.1\james-2.3.1\bin;C:\FJC\gradle-5.6.2\bin;;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.191-b12, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, hibernate.connection.pool_size=1, connection.url=jdbc:mysql://localhost:3306/addressbook?serverTimezone=UTC, java.class.version=52.0}
+o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+o.h.internal.SessionFactoryImpl - Instantiated session factory
+o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3b0f7753] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4651af1f]
+o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.addressbook.model.GroupData] is safe
+o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.addressbook.model.GroupData
+o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.addressbook.model.GroupData] is safe
+o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.addressbook.model.GroupData
+o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.addressbook.model.ItemData] is safe
+o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.addressbook.model.ItemData
+o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [ru.stqa.pft.addressbook.model.ItemData] is safe
+o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.stqa.pft.addressbook.model.ItemData
+o.h.p.c.AbstractCollectionPersister - Static SQL for collection: ru.stqa.pft.addressbook.model.ItemData.groups
+o.h.p.c.AbstractCollectionPersister -  Row insert: insert into address_in_groups (id, group_id) values (?, ?)
+o.h.p.c.AbstractCollectionPersister -  Row update: update address_in_groups set group_id=? where id=? and group_id=?
+o.h.p.c.AbstractCollectionPersister -  Row delete: delete from address_in_groups where id=? and group_id=?
+o.h.p.c.AbstractCollectionPersister -  One-shot delete: delete from address_in_groups where id=?
+o.h.p.c.AbstractCollectionPersister - Static SQL for collection: ru.stqa.pft.addressbook.model.GroupData.items
+o.h.p.c.AbstractCollectionPersister -  Row insert: insert into address_in_groups (group_id, id) values (?, ?)
+o.h.p.c.AbstractCollectionPersister -  Row update: update address_in_groups set id=? where group_id=? and id=?
+o.h.p.c.AbstractCollectionPersister -  Row delete: delete from address_in_groups where group_id=? and id=?
+o.h.p.c.AbstractCollectionPersister -  One-shot delete: delete from address_in_groups where group_id=?
+o.h.p.e.AbstractEntityPersister - Static SQL for entity: ru.stqa.pft.addressbook.model.GroupData
+o.h.p.e.AbstractEntityPersister -  Version select: select group_id from group_list where group_id =?
+o.h.p.e.AbstractEntityPersister -  Snapshot select: select groupdata_.group_id, groupdata_.group_footer as group_fo2_2_, groupdata_.group_header as group_he3_2_, groupdata_.group_name as group_na4_2_ from group_list groupdata_ where groupdata_.group_id=?
+o.h.p.e.AbstractEntityPersister -  Insert 0: insert into group_list (group_footer, group_header, group_name, group_id) values (?, ?, ?, ?)
+o.h.p.e.AbstractEntityPersister -  Update 0: update group_list set group_footer=?, group_header=?, group_name=? where group_id=?
+o.h.p.e.AbstractEntityPersister -  Delete 0: delete from group_list where group_id=?
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@40333edd]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : items
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@76fcd3f0]
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@63f2733c]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=ru.stqa.pft.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=ru.stqa.pft.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=ru.stqa.pft.addressbook.model.GroupData)
+          - CollectionAttributeFetchImpl(collection=ru.stqa.pft.addressbook.model.GroupData.items, querySpaceUid=<gen:1>, path=ru.stqa.pft.addressbook.model.GroupData.items)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=ru.stqa.pft.addressbook.model.ItemData, querySpaceUid=<gen:2>, path=ru.stqa.pft.addressbook.model.GroupData.items.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.stqa.pft.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_2_0_}
+
+o.h.loader.entity.plan.EntityLoader - Static select for entity ru.stqa.pft.addressbook.model.GroupData [NONE]: select groupdata0_.group_id as group_id1_2_0_, groupdata0_.group_footer as group_fo2_2_0_, groupdata0_.group_header as group_he3_2_0_, groupdata0_.group_name as group_na4_2_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2bb1462c]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : items
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7668315f]
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5a536f9e]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=ru.stqa.pft.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=ru.stqa.pft.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=ru.stqa.pft.addressbook.model.GroupData)
+          - CollectionAttributeFetchImpl(collection=ru.stqa.pft.addressbook.model.GroupData.items, querySpaceUid=<gen:1>, path=ru.stqa.pft.addressbook.model.GroupData.items)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=ru.stqa.pft.addressbook.model.ItemData, querySpaceUid=<gen:2>, path=ru.stqa.pft.addressbook.model.GroupData.items.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.stqa.pft.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_2_0_}
+
+o.h.loader.entity.plan.EntityLoader - Static select for entity ru.stqa.pft.addressbook.model.GroupData [READ]: select groupdata0_.group_id as group_id1_2_0_, groupdata0_.group_footer as group_fo2_2_0_, groupdata0_.group_header as group_he3_2_0_, groupdata0_.group_name as group_na4_2_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity ru.stqa.pft.addressbook.model.GroupData: select groupdata0_.group_id as group_id1_2_0_, groupdata0_.group_footer as group_fo2_2_0_, groupdata0_.group_header as group_he3_2_0_, groupdata0_.group_name as group_na4_2_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity ru.stqa.pft.addressbook.model.GroupData: select groupdata0_.group_id as group_id1_2_0_, groupdata0_.group_footer as group_fo2_2_0_, groupdata0_.group_header as group_he3_2_0_, groupdata0_.group_name as group_na4_2_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+o.h.p.e.AbstractEntityPersister - Static SQL for entity: ru.stqa.pft.addressbook.model.ItemData
+o.h.p.e.AbstractEntityPersister -  Version select: select id from addressbook where id =?
+o.h.p.e.AbstractEntityPersister -  Snapshot select: select itemdata_.id, itemdata_.firstname as firstnam2_1_, itemdata_.home as home3_1_, itemdata_.lastname as lastname4_1_, itemdata_.middlename as middlena5_1_, itemdata_.mobile as mobile6_1_, itemdata_.photo as photo7_1_, itemdata_.work as work8_1_ from addressbook itemdata_ where itemdata_.id=?
+o.h.p.e.AbstractEntityPersister -  Insert 0: insert into addressbook (firstname, home, lastname, middlename, mobile, photo, work, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+o.h.p.e.AbstractEntityPersister -  Update 0: update addressbook set firstname=?, home=?, lastname=?, middlename=?, mobile=?, photo=?, work=? where id=?
+o.h.p.e.AbstractEntityPersister -  Delete 0: delete from addressbook where id=?
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@72f5eef7]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3f2bf44f]
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5bd61641]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups.footer
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups.header
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups.items
+o.h.p.w.spi.MetamodelGraphWalker - Property path deemed to be circular : groups.items
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups.name
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : home
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : middlename
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : work
+o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=ru.stqa.pft.addressbook.model.ItemData)
+    - Returns
+       - EntityReturnImpl(entity=ru.stqa.pft.addressbook.model.ItemData, querySpaceUid=<gen:0>, path=ru.stqa.pft.addressbook.model.ItemData)
+          - CollectionAttributeFetchImpl(collection=ru.stqa.pft.addressbook.model.ItemData.groups, querySpaceUid=<gen:1>, path=ru.stqa.pft.addressbook.model.ItemData.groups)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=ru.stqa.pft.addressbook.model.GroupData, querySpaceUid=<gen:2>, path=ru.stqa.pft.addressbook.model.ItemData.groups.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.stqa.pft.addressbook.model.ItemData)
+          - SQL table alias mapping - itemdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(groups)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=ru.stqa.pft.addressbook.model.ItemData.groups)
+                - SQL table alias mapping - groups1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - group_id1_2_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=ru.stqa.pft.addressbook.model.GroupData)
+                      - SQL table alias mapping - groupdata2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {group_id1_2_2_}
+
+o.h.loader.entity.plan.EntityLoader - Static select for entity ru.stqa.pft.addressbook.model.ItemData [NONE]: select itemdata0_.id as id1_1_0_, itemdata0_.firstname as firstnam2_1_0_, itemdata0_.home as home3_1_0_, itemdata0_.lastname as lastname4_1_0_, itemdata0_.middlename as middlena5_1_0_, itemdata0_.mobile as mobile6_1_0_, itemdata0_.photo as photo7_1_0_, itemdata0_.work as work8_1_0_, groups1_.id as id1_0_1_, groupdata2_.group_id as group_id2_0_1_, groupdata2_.group_id as group_id1_2_2_, groupdata2_.group_footer as group_fo2_2_2_, groupdata2_.group_header as group_he3_2_2_, groupdata2_.group_name as group_na4_2_2_ from addressbook itemdata0_ left outer join address_in_groups groups1_ on itemdata0_.id=groups1_.id left outer join group_list groupdata2_ on groups1_.group_id=groupdata2_.group_id where itemdata0_.id=?
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bb17b9]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7804a099]
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@37aaf45]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups.footer
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups.header
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups.items
+o.h.p.w.spi.MetamodelGraphWalker - Property path deemed to be circular : groups.items
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups.name
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : home
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : middlename
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : work
+o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=ru.stqa.pft.addressbook.model.ItemData)
+    - Returns
+       - EntityReturnImpl(entity=ru.stqa.pft.addressbook.model.ItemData, querySpaceUid=<gen:0>, path=ru.stqa.pft.addressbook.model.ItemData)
+          - CollectionAttributeFetchImpl(collection=ru.stqa.pft.addressbook.model.ItemData.groups, querySpaceUid=<gen:1>, path=ru.stqa.pft.addressbook.model.ItemData.groups)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=ru.stqa.pft.addressbook.model.GroupData, querySpaceUid=<gen:2>, path=ru.stqa.pft.addressbook.model.ItemData.groups.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.stqa.pft.addressbook.model.ItemData)
+          - SQL table alias mapping - itemdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(groups)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=ru.stqa.pft.addressbook.model.ItemData.groups)
+                - SQL table alias mapping - groups1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - group_id1_2_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=ru.stqa.pft.addressbook.model.GroupData)
+                      - SQL table alias mapping - groupdata2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {group_id1_2_2_}
+
+o.h.loader.entity.plan.EntityLoader - Static select for entity ru.stqa.pft.addressbook.model.ItemData [READ]: select itemdata0_.id as id1_1_0_, itemdata0_.firstname as firstnam2_1_0_, itemdata0_.home as home3_1_0_, itemdata0_.lastname as lastname4_1_0_, itemdata0_.middlename as middlena5_1_0_, itemdata0_.mobile as mobile6_1_0_, itemdata0_.photo as photo7_1_0_, itemdata0_.work as work8_1_0_, groups1_.id as id1_0_1_, groupdata2_.group_id as group_id2_0_1_, groupdata2_.group_id as group_id1_2_2_, groupdata2_.group_footer as group_fo2_2_2_, groupdata2_.group_header as group_he3_2_2_, groupdata2_.group_name as group_na4_2_2_ from addressbook itemdata0_ left outer join address_in_groups groups1_ on itemdata0_.id=groups1_.id left outer join group_list groupdata2_ on groups1_.group_id=groupdata2_.group_id where itemdata0_.id=?
+org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity ru.stqa.pft.addressbook.model.ItemData: select itemdata0_.id as id1_1_0_, itemdata0_.firstname as firstnam2_1_0_, itemdata0_.home as home3_1_0_, itemdata0_.lastname as lastname4_1_0_, itemdata0_.middlename as middlena5_1_0_, itemdata0_.mobile as mobile6_1_0_, itemdata0_.photo as photo7_1_0_, itemdata0_.work as work8_1_0_ from addressbook itemdata0_ where itemdata0_.id=?
+org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity ru.stqa.pft.addressbook.model.ItemData: select itemdata0_.id as id1_1_0_, itemdata0_.firstname as firstnam2_1_0_, itemdata0_.home as home3_1_0_, itemdata0_.lastname as lastname4_1_0_, itemdata0_.middlename as middlena5_1_0_, itemdata0_.mobile as mobile6_1_0_, itemdata0_.photo as photo7_1_0_, itemdata0_.work as work8_1_0_ from addressbook itemdata0_ where itemdata0_.id=?
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@66a186d3]
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@405c6e3c]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : items
+o.h.p.w.spi.MetamodelGraphWalker - Property path deemed to be circular : items
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(collection=ru.stqa.pft.addressbook.model.ItemData.groups)
+    - Returns
+       - CollectionReturnImpl(collection=ru.stqa.pft.addressbook.model.ItemData.groups, querySpaceUid=<gen:0>, path=[ru.stqa.pft.addressbook.model.ItemData.groups])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=ru.stqa.pft.addressbook.model.GroupData, querySpaceUid=<gen:1>, path=[ru.stqa.pft.addressbook.model.ItemData.groups].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=ru.stqa.pft.addressbook.model.ItemData.groups)
+          - SQL table alias mapping - groups0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - group_id1_2_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ru.stqa.pft.addressbook.model.GroupData)
+                - SQL table alias mapping - groupdata1_
+                - alias suffix - 1_
+                - suffixed key columns - {group_id1_2_1_}
+
+o.h.l.c.plan.CollectionLoader - Static select for collection ru.stqa.pft.addressbook.model.ItemData.groups: select groups0_.id as id1_0_0_, groups0_.group_id as group_id2_0_0_, groupdata1_.group_id as group_id1_2_1_, groupdata1_.group_footer as group_fo2_2_1_, groupdata1_.group_header as group_he3_2_1_, groupdata1_.group_name as group_na4_2_1_ from address_in_groups groups0_ inner join group_list groupdata1_ on groups0_.group_id=groupdata1_.group_id where groups0_.id=?
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@57df589d]
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@46f09fc8]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : groups
+o.h.p.w.spi.MetamodelGraphWalker - Property path deemed to be circular : groups
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : home
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : middlename
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobile
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : work
+o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(collection=ru.stqa.pft.addressbook.model.GroupData.items)
+    - Returns
+       - CollectionReturnImpl(collection=ru.stqa.pft.addressbook.model.GroupData.items, querySpaceUid=<gen:0>, path=[ru.stqa.pft.addressbook.model.GroupData.items])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=ru.stqa.pft.addressbook.model.ItemData, querySpaceUid=<gen:1>, path=[ru.stqa.pft.addressbook.model.GroupData.items].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=ru.stqa.pft.addressbook.model.GroupData.items)
+          - SQL table alias mapping - items0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id2_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ru.stqa.pft.addressbook.model.ItemData)
+                - SQL table alias mapping - itemdata1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+o.h.l.c.plan.CollectionLoader - Static select for collection ru.stqa.pft.addressbook.model.GroupData.items: select items0_.group_id as group_id2_0_0_, items0_.id as id1_0_0_, itemdata1_.id as id1_1_1_, itemdata1_.firstname as firstnam2_1_1_, itemdata1_.home as home3_1_1_, itemdata1_.lastname as lastname4_1_1_, itemdata1_.middlename as middlena5_1_1_, itemdata1_.mobile as mobile6_1_1_, itemdata1_.photo as photo7_1_1_, itemdata1_.work as work8_1_1_ from address_in_groups items0_ inner join addressbook itemdata1_ on items0_.id=itemdata1_.id where items0_.group_id=?
+o.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6b4a3e4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+o.h.query.spi.NamedQueryRepository - Checking 0 named HQL queries
+o.h.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@f96395e
+o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 02502c44-8819-49c2-a55e-3102e4db9639 (<unnamed>)
+o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+r.s.pft.addressbook.tests.TestBase - Start test testGroupModification with parameters []
+r.s.pft.addressbook.tests.TestBase - Stop test testGroupModification with parameters []
