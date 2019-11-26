@@ -2,53 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8c42a66-42a0-4927-a7e5-edd17e995b6d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupModificationTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/packages/ru.stqa.pft.addressbook.tests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testItems/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testItems/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testItems/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_1197014038480691499_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_2115772629897290613_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_2144831430409086932_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_3036153906783292437_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_3065123446905555093_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_3483112561142488985_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_3938285446773590737_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_4440935875436865093_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_5517589878657039474_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_6734447129042572596_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_7117177214419288616_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/test/jar_extract_8191037573757658214_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testGroups/jar_extract_2193265677990435310_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testGroups/jar_extract_4029454604315468378_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testGroups/jar_extract_5658507937641934169_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_1264556712154944611_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_1498946433861729537_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_1533706900333903198_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_2169876094224314548_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_2308183977662707923_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_2711835500551608827_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_3025669798023245741_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_3302099651656842282_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_3504657002134064076_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_3897217415160425837_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_4077564090289613721_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_5434401185095948064_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_5782355133634848251_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_6071148155235579718_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_6571897791073090451_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_6712596314549349445_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_8533241043584035805_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testItems/jar_extract_9021821509064169201_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/5.6.2/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/java/test/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/java/test/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/java/test/ru/stqa/pft/addressbook/tests/GroupModificationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/java/test/ru/stqa/pft/addressbook/tests/GroupModificationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupModificationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.addressbook.tests.GroupModificationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/packages/ru.stqa.pft.addressbook.tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/packages/ru.stqa.pft.addressbook.tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testGroups/jar_extract_2758888229687626187_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testGroups/jar_extract_574983449480916991_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testGroups/jar_extract_84463238944619296_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191115T161405.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T214527.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T215412.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T220256.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T220336.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T221251.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T230603.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T230950.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T231204.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T232936.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T233308.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T233508.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T233551.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T233718.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T234123.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T234539.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T234736.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T234901.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T234926.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/log-20191125T235606.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/sandbox/.gradle/" />
@@ -121,19 +115,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state relative-caret-position="707">
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DbConnectionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-items.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -157,20 +147,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="53" column="64" lean-forward="true" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+            <state relative-caret-position="624">
+              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="748" column="25" selection-start-line="748" selection-start-column="25" selection-end-line="748" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -187,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="37" selection-start-column="8" selection-end-column="37" />
+            <state relative-caret-position="264">
+              <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -206,7 +187,7 @@
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -300,11 +281,11 @@
         <option value="$PROJECT_DIR$/github-sample/src/test/java/ru/stqa/pft/github/GithubTests.java" />
         <option value="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/PointDistanceTest.java" />
         <option value="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
       </list>
     </option>
@@ -320,73 +301,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pft" type="462c0819:PsiDirectoryNode" />
-              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pft" type="462c0819:PsiDirectoryNode" />
-              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
-              <item name="appmanager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
@@ -598,10 +513,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.25485438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.16791044" />
       <window_info id="Structure" order="1" sideWeight="0.50080776" side_tool="true" weight="0.26012793" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -610,7 +525,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50080776" side_tool="true" weight="0.26012793" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.34994584" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.34948096" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3587082" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -621,7 +536,7 @@
       <window_info anchor="bottom" id="Build" order="10" weight="0.3445287" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32871974" />
       <window_info anchor="bottom" id="Regex Tester" order="12" weight="0.32936078" />
-      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.500846" side_tool="true" visible="true" weight="0.024271844" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.500846" side_tool="true" weight="0.015991472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -632,6 +547,38 @@
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49919224" visible="true" weight="0.16791044" />
+      <window_info id="Structure" order="1" sideWeight="0.50080776" side_tool="true" weight="0.26012793" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50080776" side_tool="true" weight="0.26012793" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.34994584" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3587082" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.3445287" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32871974" />
+      <window_info anchor="bottom" id="Regex Tester" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.500846" side_tool="true" visible="true" weight="0.015991472" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" sideWeight="0.49915397" weight="0.32995737" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -733,13 +680,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetCountryNameByISO2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetCountryISO2ByName.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1091,24 +1031,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sandbox/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" selection-start-line="4" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1126,13 +1052,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/4.0.0-alpha-2/39b3b70b3a33ac4737a54ebbdced6a9bebc5eadd/selenium-remote-driver-4.0.0-alpha-2-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1147,13 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1161,10 +1073,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-items.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="53" column="64" lean-forward="true" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+        <state relative-caret-position="624">
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
